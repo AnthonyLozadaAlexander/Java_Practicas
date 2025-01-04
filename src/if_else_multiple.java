@@ -6,8 +6,8 @@ public class if_else_multiple {
         int edad;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("***BIENVENDIO A ENGLISH COURSE***");
-        System.out.println("Ingrese la edad: "); edad = input.nextInt();
+        System.out.println("****BIENVENDIO A ENGLISH COURSE****");
+        System.out.println("Ingrese la edad del alumno: "); edad = input.nextInt();
 
         // En los ifs estamos creando rangos entre los cuales se encuentran las edades
         if (edad >= 4 && edad <= 6){
