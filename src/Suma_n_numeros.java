@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Suma_n_numeros {
-    static void main(String[] args){
+    public static void main(String[] args){
         int n, suma, contador;
         Scanner input = new Scanner(System.in);
 
