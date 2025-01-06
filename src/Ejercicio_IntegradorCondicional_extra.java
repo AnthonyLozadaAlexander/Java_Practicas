@@ -59,8 +59,8 @@ public class Ejercicio_IntegradorCondicional_extra {
                         totalDescuento = montoTotal - descuento;
                         System.out.println("Usted tiene un descuento del 10% en su compra que equivale a: " + descuento);
                         System.out.println("Su monto total es de: " + totalDescuento);
-                    }
                 }
+
             }
         }
     }
