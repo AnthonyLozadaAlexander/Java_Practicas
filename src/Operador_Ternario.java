@@ -17,6 +17,7 @@ public class Operador_Ternario {
         calf2 = 0;
         calf3 = 0;
         Scanner input = new Scanner(System.in);
+        // num = Integer.parseInt(System.console().readLine());
 
         System.out.println("***PROMEDIO***");
         System.out.println("Ingrese su nombre: "); name = input.nextLine();
@@ -36,9 +37,13 @@ public class Operador_Ternario {
             {
               calf3 = input.nextDouble();
             }
+            else
+            {
+                System.out.println("Error");
+            }
         }
         promedio = (calf1 + calf2 + calf3) / 3;
-        Resultado = (promedio >= 6.5) ? name + " Aprobado" : name + " Reprobado";
+        Resultado = (promedio >= 6.5) ? name + " Aprobado" : name + " Desaprobado";
         System.out.println("Resultado: " + Resultado);
     }
 }

@@ -16,7 +16,6 @@ public class Suma_n_numeros {
         {
           suma = suma + contador;
           contador = contador + 1; //contador++;
-
         }
         System.out.println("La suma de los primeros numeros es: " + suma);
 
