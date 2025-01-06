@@ -18,6 +18,9 @@ public class Ejercicio_IntegradorCondicional {
         //Evaluar posibles casos
         if(cantidadPaquetes < 5)
         {
+            if(cantidadPaquetes < 0){
+                System.out.println("No se permiten ventas de paquetes(cantidades) negativas");
+            }
             System.out.println("No se permiten ventas inferiores a 5 paquetes");
         }
         else
