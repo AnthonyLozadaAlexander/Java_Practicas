@@ -47,7 +47,15 @@ public class CalculadoraBasica_If {
                         num1 = input.nextInt();
                         System.out.println("Ingrese el segundo numero: ");
                         num2 = input.nextInt();
+                        while (num1 < num2 || num2 == 0) {
+                            System.out.println("el primer numero debe ser mayor que el segundo y el segundo numero debe ser diferente de 0");
 
+                            System.out.println("Ingrese el primer numero: ");
+                            num1 = input.nextInt();
+                            System.out.println("Ingrese el segundo numero: ");
+                            num2 = input.nextInt();
+
+                        }
                         resultado = (num1 / num2);
                         System.out.println("El resultado de la división es: " + resultado);
                     }
