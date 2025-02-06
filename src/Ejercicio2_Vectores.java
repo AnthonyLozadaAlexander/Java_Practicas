@@ -11,5 +11,29 @@ public class Ejercicio2_Vectores {
         System.out.println("Ingrese un numero en el Indice["+i+"]");
         numeros[i] = input.nextInt();
        }
+
+       System.out.println("");
+       
+       //? Busqueda del mayor
+       int mayor = Integer.MIN_VALUE; // valor mas bajo de un entero -999999999
+       for(int i = 0; i < 10; i++)
+       {
+        if(numeros[i] > mayor)
+        {
+          mayor = numeros[i]; // guarda el numero mayor
+        }
+      }
+    System.out.println("El mayor numero es: " + mayor);
+
+      //? Busqueda del menor
+      int menor = Integer.MAX_VALUE; // valor mas alto de un entero 999999999
+      for(int i = 0; i < 10; i++)
+      {
+       if(numeros[i] < menor)
+       {
+         menor = numeros[i]; // guarda el numero menor
+       }
+     }
+   System.out.println("El menor numero es: " + menor);
   }
 }
