@@ -7,7 +7,7 @@ public class Ejercicio_Array {
         System.out.println("--------------------------------------------");
         int[] numeros = {1, 2, 3, 4, 5};
         int suma = 0;
-        for (int i = 0; i < numeros.length; i++) {
+        for(int i = 0; i < numeros.length; i++) {
             suma = suma + numeros[i];
         }
         System.out.println("La suma de los elementos del array es: " + suma);
