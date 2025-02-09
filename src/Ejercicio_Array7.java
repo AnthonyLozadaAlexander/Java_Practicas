@@ -22,26 +22,26 @@ public class Ejercicio_Array7 {
     //? Calcular promedios
     double total;
     //* Este vector debe tener la misma cantidad de posiciones que alumnos y coincidir en sus indices.
-
-    for(int f = 0; f < notas.length; f++)
+    for(int f = 0; f < notas.length; f++) // 4 filas
     {
      total = 0; // Reiniciar total
-     for(int c = 0; c < notas[0].length; c++)
+     for(int c = 0; c < notas[0].length; c++) // 3 columnas
      {
        total = total + notas[f][c];
      }
      promedios[f] = (total / notas[0].length); // notas[0].length = 3    
     }
-    System.out.println("");
+
     // Mostrar notas y promedios
-    for(int f = 0; f < notas.length; f++)
+    for(int f = 0; f < notas.length; f++) // 4 filas
     {
     System.out.println("Las notas del alunmno N°" + (f+1) + " son: ");
-    for(int c = 0; c < notas[0].length; c++)
+    for(int c = 0; c < notas[0].length; c++) // 3 columnas
     {
       System.out.println(notas[f][c]);
     }
     System.out.println("El promedio del alumno N°" + (f+1) + " es: " + promedios[f]);
+    System.out.println("");
     }
   }
 }
