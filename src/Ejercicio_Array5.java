@@ -14,15 +14,18 @@ public class Ejercicio_Array5 {
         System.out.print("Ingrese el sueldo del mes ["+(i+1)+"]: ");
         sueldos[i] = input.nextDouble();
       }
-      double suma = 0;
 
+      // Suma de los sueldos
+      double suma = 0;
       for(int i = 0; i < sueldos.length; i++)
       {
         suma = suma + sueldos[i];
       }
+
+      // Resultados
       System.out.println("");
       double promedio = suma / sueldos.length;
       System.out.println("La suma total de los sueldos es: " + suma + " $");
-      System.out.println("El promedio de los sueldos es: " + promedio+ " dolares");
+      System.out.println("El promedio de los sueldos es: " + promedio + " dolares");
     }
 }
