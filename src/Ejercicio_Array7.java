@@ -18,7 +18,7 @@ public class Ejercicio_Array7 {
       }
     }
 
-    System.out.println("");
+    System.out.println("--------------PROMEDIOS-----------------");
     //? Calcular promedios
     double total;
     //* Este vector debe tener la misma cantidad de posiciones que alumnos y coincidir en sus indices.
@@ -41,7 +41,7 @@ public class Ejercicio_Array7 {
       System.out.println(notas[f][c]);
     }
     System.out.println("El promedio del alumno N°" + (f+1) + " es: " + promedios[f]);
-    System.out.println("");
+    System.out.println("---------------------------------------");
     }
   }
 }
