@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class Ejercicio_8 { 
     public static void main(String[] args) {
+       String name = "";
        int opcion;
-       double bono, descuento, sueldo;
+       double bono, descuento, sueldo = 0.0, total = 0.0;
        Scanner input = new Scanner(System.in);
 
        System.out.println("---Bienvenido al sistema de bonos y descuentos---");
@@ -16,23 +17,28 @@ public class Ejercicio_8 {
        opcion = input.nextInt();
 
        if(opcion == 1){
+        name = "Repositor";
         sueldo = 15.890;
-        bono = sueldo * 0.10;
-        System.out.println("Su sueldo de Repositor es de: " + sueldo);
-        System.out.println("Su sueldo de Repositor mas el bono del 10% es de: " + (sueldo + bono));
+        bono = sueldo + (sueldo * 0.10);
+        total = bono;
        }
        else if(opcion == 2){
+        name = "Cajero";
         sueldo = 25630.89;
-        System.out.println("Su sueldo de Cajero es de: " + sueldo);
+        total = sueldo;      
        }
        else if(opcion == 3){
+        name = "Supervisor";
         sueldo = 35560.20;
-        descuento = sueldo * 0.11;
-        System.out.println("Su sueldo de Supervisor es de: " + (sueldo - descuento));
+        descuento = sueldo - (sueldo * 0.11);
+        total = descuento;
        }
        else{
         System.out.println("Opcion no valida");
        }
        
+       if(opcion == 1 || opcion == 2 || opcion == 3){
+        System.out.println("Su sueldo de " + name + " es de: " + total);
+       }
     }
 }
