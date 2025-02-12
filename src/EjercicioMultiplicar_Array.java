@@ -13,6 +13,7 @@ public class EjercicioMultiplicar_Array {
 
     for(int i = 0; i < arreglo.length; i++)
     {
+      input = new Scanner(System.in); // Reset the scanner
       System.out.println("arreglo["+ i + "] ");
       System.out.println("Ingrese el número");
       arreglo[i] = input.nextInt();
