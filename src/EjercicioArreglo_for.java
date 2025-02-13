@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EjercicioIntegrador {
+public class EjercicioArreglo_for {
   public static void main(String[] args) {
     int nums[] = new int[6];
     Scanner input = new Scanner(System.in);
