@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Ejercicio_Array3 {
   public static void main(String[] args) {
     // Realizar un programa que me permita la carga de 15 numeros en un vector, una vez cargados, se necesita que el programa determine cual es el mayor y cual es menor de ellos
-
+    
+    int count = 0; // contador para determinar cuantas veces se repite el numero 3
     int[] nums = new int[15];
     Scanner input = new Scanner(System.in);
     
@@ -20,26 +21,15 @@ public class Ejercicio_Array3 {
     {
       System.out.println("nums["+i+"] = " + nums[i]);
     }
-    
     System.out.println("");
     System.out.println("Resultado: ");
     for(int i = 0; i < nums.length; i++){
       if(nums[i] == 3)
       {
         System.out.println("Nums["+i+"] = " + nums[i]);
+        count = count + 1;
       }
     }
-
-    // contar cuantos numeros 3 hay en el arreglo
-    System.out.println("");
-    int contador = 0;
-    for(int i = 0; i < nums.length; i++)
-    {
-      if(nums[i] == 3 || nums[i] == -3)
-      {
-        contador = contador + 1;
-      }
-    }
-    System.out.println("Hay " + contador + " numeros 3 en el arreglo");
+    System.out.println("Hay " + count + " numeros 3 en el arreglo");
   } 
 }  
