@@ -4,6 +4,7 @@ public class Matriz_Mayor {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int[][] matriz = new int[3][3];
+    int f = 0, c = 0;
     
     System.out.println("Ingrese los 9 valores de la matriz: ");
     System.out.println("-------------------------------------");
@@ -13,6 +14,7 @@ public class Matriz_Mayor {
         matriz[i][j] = input.nextInt();
       }
     }
+    input.close();
     System.out.println("-------------------------------------");
     System.out.println("Datos de la matriz: ");
     for(int i = 0; i < matriz.length; i++){
@@ -27,10 +29,13 @@ public class Matriz_Mayor {
       for(int j = 0; j < matriz[i].length; j++){
         if(matriz[i][j] > mayor){
           mayor = matriz[i][j];
+          f = i;
+          c = j;
         }
       }
     }
-    System.out.println("El elemento mayor de la matriz es: " + mayor);
+    System.out.println("El elemento/numero mayor de la matriz es: " + mayor);
+    System.out.println("Ubicado en la F["+f+"]"+" C["+c+"]"); 
   }
   
 }
