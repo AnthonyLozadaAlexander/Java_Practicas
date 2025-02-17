@@ -24,13 +24,11 @@ public class SumaSegundDiagonal {
     }
     System.out.println("");
     System.out.println("Diagonal Secundaria: ");
-    for(F = 0; F < matriz.length; F++){
-      for(C = 0; C < matriz[F].length; C++){
-        if (F + C == matriz.length - 1) {
-          System.out.println("Matriz["+F+"]["+C+"]: " + matriz[F][C]);
-          suma = suma + matriz[F][C];
-        }   
-      }
+    C = 2;
+    for(F = 0; F < matriz.length; F++){ // La fila ira incrementando en 1 y la columna disminuyendo en 1
+      suma = suma + matriz[F][C];
+      C = C - 1;
+      
     }
     System.out.println("");
     System.out.println("Suma de la Diagonal Secundaria: " + suma);
