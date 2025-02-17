@@ -20,7 +20,7 @@ public class SumaDiagonalMatriz {
       }
       System.out.println("");
     }
-
+      System.out.println("");
     for(i = 0; i < matriz.length; i++){
       for(j = 0; j < matriz[i].length; j++){
         if(i == j){
