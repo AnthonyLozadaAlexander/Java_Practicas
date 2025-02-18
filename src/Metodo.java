@@ -17,8 +17,7 @@ public class Metodo {
    System.out.println("La suma de los numeros es: " + resultado + "\n");
    resultado = restar(a, b);
    System.out.println("La resta de los numeros es: " + resultado + "\n");
-   resultado = multiplicar(a, b);
-   System.out.println("La multiplicacion de los numeros es: " + resultado + "\n");
+   multiplicar(a, b);
 
   }
 
@@ -30,8 +29,8 @@ public class Metodo {
     return x - y;
   }
 
-  public static int multiplicar(int x, int y){
-    return x * y;
+  public static void multiplicar(int x, int y){
+    System.out.println("El resultado de la multiplicacion es: " + (x * y));
   }
 
 }
