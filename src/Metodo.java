@@ -18,7 +18,6 @@ public class Metodo {
    resultado = restar(a, b);
    System.out.println("La resta de los numeros es: " + resultado + "\n");
    multiplicar(a, b);
-
   }
 
   public static int sumar(int x, int y){
