@@ -6,7 +6,13 @@ public class FuncionFactorial {
     Scanner input = new Scanner(System.in);
     System.out.print("Ingresa un numero: ");
     n = input.nextInt();
-    CalcularFactorial();
+
+    if(n < 0){
+      System.out.println("No se puede calcular el factorial de un numero negativo");
+    }
+    else{
+      CalcularFactorial();
+    }
     
   }
   
