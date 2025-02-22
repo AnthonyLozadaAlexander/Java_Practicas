@@ -23,6 +23,7 @@ public class Ejercicio13 {
       count += totalVentas;
       System.out.println("-------------------------------------------");
     }
+    
     System.out.println("---------------------------------------------");
     System.out.println("El salario total del año es de: $" + count);
   }
