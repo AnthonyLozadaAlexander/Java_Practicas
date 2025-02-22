@@ -16,7 +16,7 @@ public class Ejercicio11 {
 
       if(calificaciones[count-1] < 0 || calificaciones[count-1] > 10){
         System.out.println("Las calificaciones deben estar entre 0 y 10. Intente de nuevo.");
-        count--; // Repetimos el ingreso de esta posición
+        count = count - 1; // Repetimos el ingreso de esta posición
       } else {
         System.out.println("La Calificación Ha Sido Guardada Correctamente");
       }
