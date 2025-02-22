@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ejercicio14 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    float participacion, primerExamen, segundoExamen, examenFinal, calificacionFinal;
+    float participacion, primerExamen, segundoExamen, examenFinal, notaFinal;
 
     System.out.println("Calcular la calificación final de un estudiante");
     System.out.println("-----------------------------------------------");
@@ -25,7 +25,7 @@ public class Ejercicio14 {
     examenFinal = examenFinal * 0.40f;
 
     System.out.println("-----------------------------------------------");
-    calificacionFinal = participacion + primerExamen + segundoExamen + examenFinal;
-    System.out.println("La calificación final del estudiante es: " + calificacionFinal);
+    notaFinal = participacion + primerExamen + segundoExamen + examenFinal;
+    System.out.println("\nLa calificación final del estudiante es: " + notaFinal);
   } 
 }
