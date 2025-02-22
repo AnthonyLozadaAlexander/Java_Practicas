@@ -9,18 +9,22 @@ public class Ejercicio13 {
     meses = 12;
     count = 0;
 
-    System.out.println("----SIMULADOR DE SALARIO----");
-    for(int i = 1; i <= meses; i++){
+    System.out.println("----------SIMULADOR DE SALARIO----------");
+    for(int i = 1; i <= meses; i++)
+    {
+
       System.out.println("Mes["+(i)+"]");
       System.out.println("Ingrese Cuantos Carros Se Han Vendido: ");
       ventas = input.nextFloat();
-      System.out.println("-------------------------------------");
+
+      System.out.println("-------------------------------------------");
       totalVentas = salario + (ventas * comision);
       System.out.println("El Salario Total Del Mes ["+i+"] Es: $"+totalVentas);
       count = count + totalVentas;
-      System.out.println("-------------------------------------");
+      System.out.println("-------------------------------------------");
+      
     }
-    System.out.println("-------------------------------------");
+    System.out.println("---------------------------------------------");
     System.out.println("El Salario Total Del Año Es De: " + count);
   }
 }
