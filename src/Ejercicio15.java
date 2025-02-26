@@ -4,6 +4,7 @@ public class Ejercicio15 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int horasTotales, semanas, dias, horas;
+    
     System.out.print("Digite el número de horas: ");
     horasTotales = input.nextInt();
 
