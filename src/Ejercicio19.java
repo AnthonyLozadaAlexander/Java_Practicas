@@ -9,7 +9,7 @@ public class Ejercicio19 {
     System.out.println("Ingrese su salario actual: ");
     salario = input.nextDouble();
 
-    if(salario < 18000){
+    if(salario > 0 && salario < 18000){
       porcentaje = salario * 0.012;
       salarioFinal = salario + porcentaje;
       System.out.println("Su salario final es: " + salarioFinal);
@@ -23,6 +23,9 @@ public class Ejercicio19 {
       porcentaje = salario * 0.07;
       salarioFinal = salario + porcentaje;
       System.out.println("Su salario final es: " + salarioFinal);
+    }
+    else{
+      System.out.println("Error, ingrese un salario valido");
     }
     
   }  
