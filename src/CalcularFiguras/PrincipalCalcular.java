@@ -1,3 +1,5 @@
+package CalcularFiguras;
+
 import java.util.Scanner;
 
 public class PrincipalCalcular {
