@@ -15,10 +15,11 @@ public class Ejercicio21 {
       System.out.println("--------------------------------------------------");
       System.out.println("Error: El monto de la compra no puede ser negativo");
       System.out.println("--------------------------------------------------");
+      salir = false;
     }
     else{
-      descuento = compra * 0.15f; // 15% de descuento
-      total = compra - descuento;
+      descuento = compra * 0.15f; // 15% del porcentaje de descuento
+      total = compra - descuento; // Total a pagar
       System.out.println("---------------------------------");
       System.out.println("Dato Ingresado Correctamente");
       System.out.println("---------------------------------");
