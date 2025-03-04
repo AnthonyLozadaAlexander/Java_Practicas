@@ -7,10 +7,12 @@ public class While_ejercicio {
         Scanner input = new Scanner(System.in);
 
         while(true) {
+            System.out.println("-------BIENVENIDO------");
             System.out.println("¿Desea continuar? (s/n)");
             respuesta = input.next();
 
             if(respuesta.equalsIgnoreCase("n")) {
+                System.out.println("Saliendo...");
             break; // alternativa a bandera = false;
             } 
             else if(respuesta.equalsIgnoreCase("s")) {
@@ -41,7 +43,7 @@ public class While_ejercicio {
                     mujeres = mujeres * 100/total;
                     hombres = hombres * 100/total;
 
-                    System.out.println("\nEl porcentaje de mujeres es: " + mujeres + "%\n");
+                    System.out.println("\nEl porcentaje de mujeres es: " + mujeres + "%");
                     System.out.println("\nEl porcentaje de hombres es: " + hombres + "%\n");
                     System.out.println("---------------------------------------------------------");
                 } while(mujeres < 0 || mujeres == 0 || hombres == 0 || hombres < 0);
