@@ -43,8 +43,10 @@ public class While_ejercicio {
                     mujeres = mujeres * 100/total;
                     hombres = hombres * 100/total;
 
-                    System.out.println("\nEl porcentaje de mujeres es: " + mujeres + "%");
-                    System.out.println("\nEl porcentaje de hombres es: " + hombres + "%\n");
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("\nEl total de personas que hay es de: " + total);
+                    System.out.println("El porcentaje de mujeres es: " + mujeres + "%");
+                    System.out.println("El porcentaje de hombres es: " + hombres + "%\n");
                     System.out.println("---------------------------------------------------------");
                 } while(mujeres < 0 || mujeres == 0 || hombres == 0 || hombres < 0);
                 System.out.println("Continuando...");
