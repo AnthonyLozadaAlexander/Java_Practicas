@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumaSegundDiagonal {
+public class SumaSegundaDiagonal {
   public static void main(String[] args) {
     //? Sumar la diagonal secundaria de una matriz en java
     Scanner input = new Scanner(System.in); 
