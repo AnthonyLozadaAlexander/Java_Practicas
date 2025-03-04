@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
   public static float IVA(float precioDeCompra){
-    float IVA = precioDeCompra + (precioDeCompra * 0.19f);
+    float IVA = (precioDeCompra * 0.19f);
     return IVA;
   }
 
@@ -23,10 +23,12 @@ public class Ejercicio2 {
       }
       else{    
         
-      System.out.println("-------------------------------------");
-      System.out.println("Total:" + precioDeCompra);
-      System.out.println("Total Con IVA del 19%: " + IVA(precioDeCompra));
-      System.out.println("-------------------------------------");
+      IVA = IVA(precioDeCompra);
+      System.out.println("\n-------------------------------------");
+      System.out.println("Total: " + precioDeCompra);
+      System.out.println("IVA del 19%: " + IVA);
+      System.out.println("Total (IVA incluido): " + (precioDeCompra + IVA));
+      System.out.println("--------------------------------------\n");
 
       }
     }while(precioDeCompra <= 0);
