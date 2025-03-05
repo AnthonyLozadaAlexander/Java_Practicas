@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio4 {
 
   public static String multiplicar(int n1, int n2){
-    
+
     return n1 + " x " + n2 + " = " + (n1 * n2);
 
   }
@@ -18,7 +18,9 @@ public class Ejercicio4 {
     n = input.nextInt();
 
     for(int i = 0; i <= 12; i++){
-      System.out.println(multiplicar(n, i));
+      System.out.println("--------------------");
+      System.out.println("     "+multiplicar(n, i));
+      System.out.println("--------------------");
     }
 
     input.close();
