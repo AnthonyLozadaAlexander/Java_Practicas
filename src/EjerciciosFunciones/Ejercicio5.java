@@ -7,11 +7,9 @@ public class Ejercicio5 {
   public static boolean esPrimo(int n) {
     if (n <= 1) {
       return false;
-    } 
-    else if (n == 2) {
+    } else if (n == 2) {
       return true;
-    }
-    else {
+    } else {
       for (int i = 2; i < n; i++) {
         if (n % i == 0) {
           return false;
@@ -43,8 +41,7 @@ public class Ejercicio5 {
       if (num <= 1) {
         System.out.println("\nError: Debe Ingresar Un Numero Mayor A 0\n");
         continue;
-      } 
-      else {
+      } else {
         System.out.println("--------------------------------------------------");
         for (int i = 1; i <= num; i++) {
           System.out.println("i = " + i + " es primo? -> " + esPrimo(i));
