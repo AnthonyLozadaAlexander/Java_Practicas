@@ -23,8 +23,8 @@ public class Ejercicio23 {
     return (float) Math.pow(num1, num2);
   }
 
-  public static float radicacion(float num1){
-    return (float) Math.sqrt(num1);
+  public static float radicacion(float num1, float num2){
+    return (float) Math.pow(num1, (1/num2));
   }
   public static void main(String[] args) {
     
@@ -58,12 +58,21 @@ public class Ejercicio23 {
     opc = input.nextInt();
 
     if(opc == 1){
-
+      System.out.println("\nLa suma de " + num1 + " + " + num2 + " es -> " + suma(num1, num2));
     }
     else if(opc == 2){
-
+      if(num1 == 0){
+        System.out.println("Error: No se puede restar 0 a otro numero");
+      }
+      else if(num1 < num2){
+        System.out.println("Error: El minuendo no puede ser menor que el sustraendo");
+      }
+      else{
+      System.out.println("\nLa resta de " + num1 + " - " + num2 + " es -> " + resta(num1, num2));
+      }
     }
     else if(opc == 3){
+      System.out.println("\nLa multiplicacion de " + num1 + " * " + num2 + " es -> " + multiplicacion(num1, num2));
 
     }
     else if(opc == 5){
