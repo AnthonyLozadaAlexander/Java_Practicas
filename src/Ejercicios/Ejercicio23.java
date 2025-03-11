@@ -3,13 +3,36 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio23 {
+  public static float suma(float num1, float num2){
+    return num1 + num2;
+  }
+
+  public static float resta(float num1, float num2){
+    return num1 - num2;
+  }
+
+  public static float multiplicacion(float num1, float num2){
+    return num1 * num2;
+  }
+
+  public static float division(float num1, float num2){
+    return num1 / num2;
+  }
+
+  public static float exponenciacion(float num1, float num2){
+    return (float) Math.pow(num1, num2);
+  }
+
+  public static float radicacion(float num1){
+    return (float) Math.sqrt(num1);
+  }
   public static void main(String[] args) {
     
     Scanner input = new Scanner(System.in);
     float num1 = 0, num2 = 0;
     int opc;
     System.out.println("----OPERACIONES ARITMETICAS----");
-    System.out.print("-------------------------------");
+    System.out.println("-------------------------------");
 
     System.out.println("Introduce el primer numero");
     System.out.print("-> ");
@@ -18,8 +41,9 @@ public class Ejercicio23 {
     System.out.println("Introduce el segundo numero");
     System.out.print("-> ");
     num2 = input.nextFloat();
+    System.out.println("-------------------------------");
     
-    System.out.println("--------------------------------");
+    System.out.println("\n--------------------------------");
     System.out.println("----------OPCIONES--------------");
     System.out.println("1. Sumar");
     System.out.println("2. Restar");
@@ -28,6 +52,7 @@ public class Ejercicio23 {
     System.out.println("5. Exponenciacion");
     System.out.println("6. Radicacion");
     System.out.println("--------------------------------");
+
     System.out.println("Elige una opcion");
     System.out.print("-> ");
     opc = input.nextInt();
