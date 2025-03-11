@@ -30,7 +30,10 @@ public class Ejercicio23 {
     
     Scanner input = new Scanner(System.in);
     float num1 = 0, num2 = 0;
-    int opc;
+    boolean salir = false;
+    String respuesta = "";
+    int opc = 0;
+    do{
     System.out.println("----OPERACIONES ARITMETICAS----");
     System.out.println("-------------------------------");
 
@@ -53,15 +56,28 @@ public class Ejercicio23 {
     System.out.println("        6. Radicacion");
     System.out.println("--------------------------------");
 
+    boolean error = true;
+    do{
     System.out.println("Elige una opcion");
     System.out.print("-> ");
+    if (!input.hasNextInt()) {
+      System.out.println("\nError: Debe ser un numero entero\n");
+      input.next(); // Clear invalid input
+      error = true;
+      continue; // Skip to next iteration
+    }
     opc = input.nextInt();
+    if(opc < 1 || opc > 6){
+      System.out.println("\nError: Opcion Invalida\n");
+      error = true;
+    }else{
+      error = false;
+    }
+  }while(error == true);
 
     System.out.println("\n----------------------------------");
-    System.out.println("        Opcion Eliga: " + opc);
+    System.out.println("        Opcion Elegida: " + opc);
     System.out.println("----------------------------------\n");
-
-    System.out.println("------------------------------------");
     
     if(opc == 1){
       System.out.println("\nLa suma de " + num1 + " + " + num2 + " es -> " + suma(num1, num2));
@@ -90,13 +106,26 @@ public class Ejercicio23 {
       }
     }
     else if(opc == 6){
+
+      System.out.println("La radicacion de " + num1 + " ^" + num2 + " es -> " + radicacion(num1, num2));
       
     }
     else{
       System.out.println("Error: Opcion Invalida");
     }
-    System.out.println("------------------------------------");
-    
-    
+
+    input = new Scanner(System.in); // Limpiar buffer
+    System.out.println("\nDesea volver a intentarlo? (si/no)");
+    System.out.print("-> ");
+    respuesta = input.nextLine();
+    if(respuesta.equalsIgnoreCase("si")){
+      salir = false;
+    }else{
+    System.out.println("\n------------------------------------");
+    System.out.println("Gracias por usar el programa");
+    System.out.println("------------------------------------\n");
+    salir = true;
+    }
+  }while(salir == false);
   } 
 }
