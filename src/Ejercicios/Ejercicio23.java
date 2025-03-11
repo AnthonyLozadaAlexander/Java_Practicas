@@ -82,7 +82,12 @@ public class Ejercicio23 {
       
     }
     else if(opc == 5){
-      
+      if(num2 == 0){
+        System.out.println("Error: No se puede elevar a la 0");
+      }
+      else{
+      System.out.println("\n La exponenciacion de " + num1 + " ^" + num2 + " es -> " + exponenciacion(num1, num2));
+      }
     }
     else if(opc == 6){
       
