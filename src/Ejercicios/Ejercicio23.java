@@ -44,19 +44,25 @@ public class Ejercicio23 {
     System.out.println("-------------------------------");
     
     System.out.println("\n--------------------------------");
-    System.out.println("----------OPCIONES--------------");
-    System.out.println("1. Sumar");
-    System.out.println("2. Restar");
-    System.out.println("3. Multiplicacion");
-    System.out.println("4. Division");
-    System.out.println("5. Exponenciacion");
-    System.out.println("6. Radicacion");
+    System.out.println("------------OPCIONES--------------");
+    System.out.println("        1. Sumar");
+    System.out.println("        2. Restar");
+    System.out.println("        3. Multiplicacion");
+    System.out.println("        4. Division");
+    System.out.println("        5. Exponenciacion");
+    System.out.println("        6. Radicacion");
     System.out.println("--------------------------------");
 
     System.out.println("Elige una opcion");
     System.out.print("-> ");
     opc = input.nextInt();
 
+    System.out.println("\n----------------------------------");
+    System.out.println("        Opcion Eliga: " + opc);
+    System.out.println("----------------------------------\n");
+
+    System.out.println("------------------------------------");
+    
     if(opc == 1){
       System.out.println("\nLa suma de " + num1 + " + " + num2 + " es -> " + suma(num1, num2));
     }
@@ -68,21 +74,24 @@ public class Ejercicio23 {
         System.out.println("Error: El minuendo no puede ser menor que el sustraendo");
       }
       else{
-      System.out.println("\nLa resta de " + num1 + " - " + num2 + " es -> " + resta(num1, num2));
+        System.out.println("\nLa resta de " + num1 + " - " + num2 + " es -> " + resta(num1, num2));
       }
     }
     else if(opc == 3){
       System.out.println("\nLa multiplicacion de " + num1 + " * " + num2 + " es -> " + multiplicacion(num1, num2));
-
+      
     }
     else if(opc == 5){
-
+      
     }
     else if(opc == 6){
-
+      
     }
     else{
       System.out.println("Error: Opcion Invalida");
     }
+    System.out.println("------------------------------------");
+    
+    
   } 
 }
