@@ -115,17 +115,24 @@ public class Ejercicio23 {
     }
 
     input = new Scanner(System.in); // Limpiar buffer
+    do{
     System.out.println("\nDesea volver a intentarlo? (si/no)");
     System.out.print("-> ");
     respuesta = input.nextLine();
     if(respuesta.equalsIgnoreCase("si")){
       salir = false;
-    }else{
+    }
+    else if(respuesta.equalsIgnoreCase("no"))
+    {
     System.out.println("\n------------------------------------");
     System.out.println("Gracias por usar el programa");
     System.out.println("------------------------------------\n");
     salir = true;
     }
+    else{
+      System.out.println("\nError: Respuesta Invalida\n");
+    }
+    } while(!respuesta.equalsIgnoreCase("si") && !respuesta.equalsIgnoreCase("no"));
   }while(salir == false);
   } 
 }
