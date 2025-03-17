@@ -23,7 +23,7 @@ public class Ejercicio7 {
         continue;
       }
       dias = input.nextInt();
-    } while (dias <= 0);
+    } while (dias < 0);
 
     do {
       System.out.println("\nIngrese la cantidad de horas");
@@ -34,7 +34,7 @@ public class Ejercicio7 {
         continue;
       }
       horas = input.nextInt();
-    } while (horas <= 0);
+    } while (horas < 0);
 
     do {
       System.out.println("\nIngrese la cantidad de minutos");
@@ -45,7 +45,7 @@ public class Ejercicio7 {
         continue;
       }
       minutos = input.nextInt();
-    } while (minutos <= 0);
+    } while (minutos < 0);
 
     do {
       System.out.println("\nIngrese la cantidad de segundos");
@@ -56,7 +56,7 @@ public class Ejercicio7 {
         continue;
       }
       segundos = input.nextInt();
-    } while (segundos <= 0);
+    } while (segundos < 0);
     
     System.out.println("\n---------------------------------");
     System.out.println("        Dias: " + dias);
