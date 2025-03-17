@@ -23,38 +23,41 @@ public class Ejercicio7 {
         continue;
       }
       dias = input.nextInt();
-      do {
-        System.out.println("\nIngrese la cantidad de horas");
-        System.out.print("-> ");
-        if (!input.hasNextInt()) {
-          System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
-          input.next();
-          continue;
-        }
-        horas = input.nextInt();
-        do {
-          System.out.println("\nIngrese la cantidad de minutos");
-          System.out.print("-> ");
-          if (!input.hasNextInt()) {
-            System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
-            input.next();
-            continue;
-          }
-          minutos = input.nextInt();
-          do {
-            System.out.println("\nIngrese la cantidad de segundos");
-            System.out.print("-> ");
-            if (!input.hasNextInt()) {
-              System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
-              input.next();
-              continue;
-            }
-            segundos = input.nextInt();
-          } while (segundos <= 0);
-        } while (minutos <= 0);
-      } while (horas <= 0);
     } while (dias <= 0);
 
+    do {
+      System.out.println("\nIngrese la cantidad de horas");
+      System.out.print("-> ");
+      if (!input.hasNextInt()) {
+        System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
+        input.next();
+        continue;
+      }
+      horas = input.nextInt();
+    } while (horas <= 0);
+
+    do {
+      System.out.println("\nIngrese la cantidad de minutos");
+      System.out.print("-> ");
+      if (!input.hasNextInt()) {
+        System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
+        input.next();
+        continue;
+      }
+      minutos = input.nextInt();
+    } while (minutos <= 0);
+
+    do {
+      System.out.println("\nIngrese la cantidad de segundos");
+      System.out.print("-> ");
+      if (!input.hasNextInt()) {
+        System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
+        input.next();
+        continue;
+      }
+      segundos = input.nextInt();
+    } while (segundos <= 0);
+    
     System.out.println("\n---------------------------------");
     System.out.println("        Dias: " + dias);
     System.out.println("        Minutos: " + minutos);
@@ -64,7 +67,7 @@ public class Ejercicio7 {
 
     System.out.println("---------------------------------");
     System.out.println("La conversion total a segundos es");
-    System.out.println("-> " + calcularSegundos(dias, horas, minutos, segundos) + "Segundos");
+    System.out.println("-> " + calcularSegundos(dias, horas, minutos, segundos) + " Segundos");
     System.out.println("---------------------------------");
   }
 }
