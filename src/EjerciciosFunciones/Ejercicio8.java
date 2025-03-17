@@ -60,7 +60,8 @@ public class Ejercicio8 {
           estatura = input.nextFloat();
           if (estatura <= 0) {
             System.out.println("\nError: Debe Ingresar Numeros Positivos\n");
-          } else {
+          }
+          else {
             System.out.println("\n----------------------------");
             System.out.println("Estatura Ingresado: " + estatura + " Kg");
             System.out.println("------------------------------\n");
