@@ -31,46 +31,74 @@ public class Ejercicio8 {
 
   public static void main(String[] args) {
     float peso = 0, estatura = 0;
+    String respuesta;
+    boolean continueLoop = true;
     Scanner input = new Scanner(System.in);
-    System.out.println("--------------Calculadora de IMC--------------");
-    System.out.println("-----------------------------------------------");
     do {
-      System.out.println("\nIngrese su peso");
-      System.out.print("-> ");
-      if (!input.hasNextFloat()) {
-        System.out.println("Error: Ingrese un número");
-        input.next(); // Limpiar el buffer del teclado
-        continue;
-      }
-      peso = input.nextFloat();
-      if (peso <= 0) {
-        System.out.println("\nError: Debe Ingresar Numeros Positivos\n");
-      } else {
-        System.out.println("\n----------------------------");
-        System.out.println("Peso Ingresado: " + peso + " Kg");
-        System.out.println("------------------------------\n");
-        do {
-          System.out.println("\nIngrese su estatura");
-          System.out.print("-> ");
-          if (!input.hasNextFloat()) {
-            System.out.println("\nError: Ingrese un número\n");
-            input.next(); // Limpiar el buffer del teclado
-            continue;
-          }
-          estatura = input.nextFloat();
-          if (estatura <= 0) {
-            System.out.println("\nError: Debe Ingresar Numeros Positivos\n");
-          }
-          else {
-            System.out.println("\n----------------------------");
-            System.out.println("Estatura Ingresado: " + estatura + " Kg");
-            System.out.println("------------------------------\n");
-          }
-        } while (estatura <= 0);
-      }
-    } while (peso <= 0);
+      System.out.println("--------------Calculadora de IMC--------------");
+      System.out.println("-----------------------------------------------");
+      do {
+        System.out.println("\nIngrese su peso");
+        System.out.print("-> ");
+        if (!input.hasNextFloat()) {
+          System.out.println("Error: Ingrese un número");
+          input.next(); // Limpiar el buffer del teclado
+          continue;
+        }
+        peso = input.nextFloat();
+        if (peso <= 0) {
+          System.out.println("\nError: Debe Ingresar Numeros Positivos\n");
+        } else {
+          System.out.println("\n----------------------------");
+          System.out.println("Peso Ingresado: " + peso + " Kg");
+          System.out.println("------------------------------\n");
+          do {
+            System.out.println("\nIngrese su estatura");
+            System.out.print("-> ");
+            if (!input.hasNextFloat()) {
+              System.out.println("\nError: Ingrese un número\n");
+              input.next(); // Limpiar el buffer del teclado
+              continue;
+            }
+            estatura = input.nextFloat();
+            if (estatura <= 0) {
+              System.out.println("\nError: Debe Ingresar Numeros Positivos\n");
+            } else {
+              System.out.println("----------------------------");
+              System.out.println("Estatura Ingresado: " + estatura + " Kg");
+              System.out.println("------------------------------\n");
+            }
+          } while (estatura <= 0);
+        }
+      } while (peso <= 0);
 
-    System.out.println("Resultados");
-    System.out.println("IMC -> "+ IMC(peso, estatura));
+      System.out.println("Resultados");
+      System.out.println("IMC -> " + IMC(peso, estatura) + " Kg/m^2\n");
+
+      Boolean On = true;
+      do {
+        input = new Scanner(System.in); // Limpiar el buffer del teclado
+        System.out.println("-----------------------------------------------");
+        System.out.println("Desea continuar?");
+        System.out.println("-> Si");
+        System.out.println("-> No");
+        System.out.println("-----------------------------------------------");
+        System.out.print("-> ");
+        respuesta = input.nextLine();
+        if (respuesta.equalsIgnoreCase("si")) {
+          On = false;
+          continueLoop = true;
+        } else if (respuesta.equalsIgnoreCase("no")) {
+          System.out.println("\nGracias por usar la calculadora de IMC\n");
+          On = false;
+          continueLoop = false;
+        } else {
+          System.out.println("\nError: Ingrese una respuesta valida\n");
+          On = true;
+          continueLoop = true;
+        }
+      } while (On == true);
+
+    } while (continueLoop == true);
   }
 }
