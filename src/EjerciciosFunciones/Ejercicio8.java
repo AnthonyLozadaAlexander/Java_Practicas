@@ -68,5 +68,8 @@ public class Ejercicio8 {
         } while (estatura <= 0);
       }
     } while (peso <= 0);
+
+    System.out.println("IMC");
+    System.out.println("-> "+ IMC(peso, estatura));
   }
 }
