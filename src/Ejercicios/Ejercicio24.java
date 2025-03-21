@@ -35,17 +35,23 @@ public class Ejercicio24 {
                         facturacionTotal = (cantLitros * precioLitros);
                         montoTotal = montoTotal + facturacionTotal;
                         countLitros = countLitros + cantLitros;
+
+                        if(facturacionTotal > 600){
+                            countFacturas = countFacturas + 1;
+                        }
+
                         break;
                     }
                 }
             }
         }
 
-        System.out.println("\n--------------------------");
+        System.out.println("\n------------------------------");
         System.out.println("          RESUMEN");
-        System.out.println("--------------------------");
+        System.out.println("------------------------------");
+        System.out.println("Facturas Mayores a $600: " + countFacturas);
         System.out.println("Litros Ingresados: " + countLitros);
         System.out.println("Monto Total A Pagar: " + montoTotal);
-        System.out.println("--------------------------");
+        System.out.println("------------------------------");
     }
 }
