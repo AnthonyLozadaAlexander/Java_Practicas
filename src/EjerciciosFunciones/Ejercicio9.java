@@ -24,8 +24,8 @@ public class Ejercicio9 {
             else{
               return false;
             }
-
         }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -44,6 +44,13 @@ public class Ejercicio9 {
             }
             else{
                 System.out.println("\nPalabra Ingresada Correctamente\n");
+
+                if(esPalindromo(palabra)){
+                    System.out.println("La Palabra Ingresada Es Palindromo");
+                }
+                else{
+                    System.out.println("La Palabra Ingresada No Es Palindromo");
+                }
             }
         }while(palabra.equalsIgnoreCase("") || palabra == null);
 
