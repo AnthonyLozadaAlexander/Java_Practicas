@@ -63,7 +63,7 @@ public class Ejercicio9 {
                 respuesta = input.nextLine();
 
                 if (respuesta.equalsIgnoreCase("")) {
-                    System.out.println("\nError: La Respuesta No Puede Estar Vacia\n");
+                    System.out.println("\nError: La Respuesta No Puede Estar Vacia");
                 }
                 else if (respuesta.equalsIgnoreCase("1")) {
                     break;
@@ -74,7 +74,7 @@ public class Ejercicio9 {
                     break;
                 }
                 else {
-                    System.out.println("\nError: Respuesta Incorrecta\n");
+                    System.out.println("\nError: Respuesta Incorrecta");
                 }
             }while(true);
         }while(On == false);
