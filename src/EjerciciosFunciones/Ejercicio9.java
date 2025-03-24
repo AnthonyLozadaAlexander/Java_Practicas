@@ -17,7 +17,7 @@ public class Ejercicio9 {
         int b = palabra.length() - 1; // ultimo indice de la palabra
 
         for (int i = 0; i < palabra.length(); i++) {
-            if (palabra.charAt(i) == palabra.charAt(b)) {
+            if (palabra.charAt(a) == palabra.charAt(b)) {
                 a++;
                 b--;
             } else {
