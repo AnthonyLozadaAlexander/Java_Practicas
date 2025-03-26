@@ -60,10 +60,18 @@ public class MediaDeArreglos {
         System.out.println("                "+sumP + " / " + countP);
         System.out.println("                "+sumN + " / " + countN);
         System.out.println("--------------------------------------------");
-        System.out.println("La Suma De los Numeros Positivos es: " + sumP);
-        System.out.println("La suma De los Numeros Negativos es: " + sumN);
-        System.out.println("El Promedio de los Numeros Positivos es: " + sumP/countP);
-        if(sumN > 0 || sumN < 0) {
+        if(countP == 0){
+            System.out.println("\nNo se puede sacar el promedio de los numeros positivos\n");
+        }
+        else {
+            System.out.println("La Suma De los Numeros Positivos es: " + sumP);
+            System.out.println("El Promedio de los Numeros Positivos es: " + sumP / countP);
+        }
+        if(countN == 0) {
+            System.out.println("\nNo se puede sacar el promedio de los numeros negativos\n");
+        }
+        else{
+            System.out.println("La suma De los Numeros Negativos es: " + sumN);
             System.out.println("El Promedio de los Numeros Negativos es: " + sumN / countN);
         }
         System.out.println("Cantidad de ceros ingresados: " + count0);
