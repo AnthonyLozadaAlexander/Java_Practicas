@@ -39,17 +39,26 @@ public class MediaDeArreglos {
             nums[i] = input.nextInt();
 
             if(nums[i] > 0){
-                System.out.println("\nDato["+i+"] Positivo Ingresado -> " + nums[i]);
+                System.out.println("\nDato["+i+"] Positivo Ingresado -> " + nums[i] + "\n");
                 sumP = sumP + nums[i];
                 countP++; // el contador se ira sumando cada que se ingrese numeros positivos
             }
             else if(nums[i] < 0){
-                System.out.println("\nDato["+i+"] Negativo Ingresado -> " + nums[i]);
+                System.out.println("\nDato["+i+"] Negativo Ingresado -> " + nums[i] + "\n");
                 sumN = sumN + nums[i];
                 countN++; // contador para los negativos
             }else{
                 count0++; // contador para los ceros
             }
         }
+
+        System.out.println("\n--------------------------------------");
+        System.out.println("             RESULTADOS");
+        System.out.println("--------------------------------------");
+        System.out.println("La Suma De los Numeros Positivos es: " + sumP);
+        System.out.println("La suma De los Numeros Negativos es: " + sumN);
+        System.out.println("El Promedio de los Numeros Positivos es: " + sumP/countP);
+        System.out.println("El Promedio de los Numeros Negativos es: " + sumN/countN);
+
     }
 }
