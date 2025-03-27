@@ -13,6 +13,7 @@ public class TablasArrays {
         System.out.println("         BIENVENIDO");
         System.out.println("-----------------------------");
 
+        // Arreglo A
         System.out.println("Ingrese Datos Enteros Al Array A");
         for(int i = 0; i < A.length; i++){
             System.out.println("Array1["+i+"]");
@@ -25,6 +26,7 @@ public class TablasArrays {
             System.out.println("Array["+i+"] = "+ A[i]);
         }
 
+        // Arreglo B
         System.out.println("\nIngrese Datos Enteros Al Array B");
         for(int j = 0; j < B.length; j++){
             System.out.println("Array2["+j+"]");
