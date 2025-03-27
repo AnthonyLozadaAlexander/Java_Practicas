@@ -41,11 +41,12 @@ public class TablasArraysV2 {
 
        int j = 0;
        for(int i = 0; i < A.length; i++){
-           C[j] = A[i];
-           j++;
-           C[j] = B[i];
-           j++;
+           C[j] = A[i]; // Entra el 1ero De A
+           j++; // Incrementa J
+           C[j] = B[i]; // Entra el 1ero de B
+           j++; // Incrementa J
        }
+
         System.out.println("\nDatos Del Arreglo C");
         int countC = 0;
         for(int datos: C){
