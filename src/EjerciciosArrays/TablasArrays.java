@@ -37,12 +37,17 @@ public class TablasArrays {
             System.out.println("Array["+j+"] = "+ B[j]);
         }
 
+        int index1 = 0, index2 = 0; // para evitar desbordamiento de memoria
         for(int k = 0; k < C.length; k++){
             if(k % 2 == 0){
-                C[k] = B[k];
+                if(index1 < B.length){
+                    C[k] = A[index1++]; // incrementador del index1 hasta B.length
+                }
             }
             else{
-                C[k] = A[k];
+                if(index2 < A.length) {
+                    C[k] = B[index2++]; // incrementador del index2 hasta A.length
+                }
             }
         }
 
