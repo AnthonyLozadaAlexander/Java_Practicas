@@ -42,13 +42,13 @@ public class TablasArrays {
         int index1 = 0, index2 = 0; // para evitar desbordamiento de memoria
         for(int k = 0; k < C.length; k++){
             if(k % 2 == 0){
-                if(index1 < B.length){
-                    C[k] = A[index1++]; // incrementador del index1 hasta B.length
+                if(index1 < A.length){
+                    C[k] = A[index1++]; // incrementador del index1 hasta A.length
                 }
             }
             else{
-                if(index2 < A.length) {
-                    C[k] = B[index2++]; // incrementador del index2 hasta A.length
+                if(index2 < B.length) {
+                    C[k] = B[index2++]; // incrementador del index2 hasta B.length
                 }
             }
         }
