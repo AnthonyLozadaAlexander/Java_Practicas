@@ -6,9 +6,9 @@ public class MetodoBurbuja {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int array[], nElementos;
-        System.out.println("------------------------");
-        System.out.println("        WELCOME");
-        System.out.println("------------------------");
+        System.out.println("---------------------------");
+        System.out.println("          WELCOME");
+        System.out.println("---------------------------");
         do {
             System.out.println("Ingrese el tamaño del array");
             System.out.print("-> ");
@@ -29,5 +29,19 @@ public class MetodoBurbuja {
                 break;
             }
         }while(true);
+        array = new int[nElementos]; // agregamos el tamaño del array
+        System.out.println("Ingrese Los Elementos Enteros Al Array");
+        for(int i = 0; i < nElementos; i++){
+            System.out.println("array["+i+"]");
+            System.out.print("-> ");
+            if(!input.hasNextInt()){
+                System.out.println("\nError: Debe Ingresar Un Numero\n");
+                input.next();
+                i--; // repite la iteracion desde el mismo indice
+            }
+            else{
+                array[i] = input.nextInt();
+            }
+        }
     }
 }
