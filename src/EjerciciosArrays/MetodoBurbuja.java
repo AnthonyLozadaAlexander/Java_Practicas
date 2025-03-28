@@ -74,5 +74,16 @@ public class MetodoBurbuja {
         for(int i = 0; i < nElementos; i++){
             System.out.print(array[i] + ", ");
         }
+
+        System.out.println("\n---------------------------------------");
+        System.out.println("Datos Del Array Ordenados Crecientemente");
+        for(int i = 0; i < nElementos; i++){
+            System.out.print(array[i] + ", ");
+        }
+        System.out.println("\nDatos Del Array Ordenados Decrecientemente");
+        for(int j = (nElementos-1); j >= 0; j--){ // nElementos - 1 == ultima posicion
+            System.out.print(array[j] + ", ");
+        }
+        System.out.println("\n-----------------------------------------");
     }
 }
