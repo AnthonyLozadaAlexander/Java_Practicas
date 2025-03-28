@@ -16,27 +16,27 @@ public class TablasArrays {
         // Arreglo A
         System.out.println("Ingrese Datos Enteros Al Array A");
         for(int i = 0; i < A.length; i++){
-            System.out.println("Array1["+i+"]");
+            System.out.println("ArrayA["+i+"]");
             System.out.print("-> ");
             A[i] = input.nextInt();
         }
 
         System.out.println("\nDatos Enteros Del Array A");
         for(int i = 0; i < A.length; i++){
-            System.out.println("Array["+i+"] = "+ A[i]);
+            System.out.println("ArrayA["+i+"] = "+ A[i]);
         }
 
         // Arreglo B
         System.out.println("\nIngrese Datos Enteros Al Array B");
         for(int j = 0; j < B.length; j++){
-            System.out.println("Array2["+j+"]");
+            System.out.println("ArrayB["+j+"]");
             System.out.print("-> ");
             B[j] = input.nextInt();
         }
 
         System.out.println("\nDatos Enteros Del Array B");
         for(int j = 0; j < B.length; j++){
-            System.out.println("Array["+j+"] = "+ B[j]);
+            System.out.println("ArrayB["+j+"] = "+ B[j]);
         }
 
         int index1 = 0, index2 = 0; // para evitar desbordamiento de memoria
