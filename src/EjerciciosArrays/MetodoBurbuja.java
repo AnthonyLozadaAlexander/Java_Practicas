@@ -65,21 +65,23 @@ public class MetodoBurbuja {
         }
 
         System.out.println("\nDatos Del Array Ordenados");
-        // verticalmente
+        // mostrara los datos verticalmente
         for(int i = 0; i < nElementos; i++){
             System.out.println("Array["+i+"] = " + array[i]);
         }
-        // horizontalmente
-        System.out.println("---------------------------");
+        // mostrara los datos horizontalmente
+        System.out.println("----------------------------------------");
         for(int i = 0; i < nElementos; i++){
             System.out.print(array[i] + ", ");
         }
 
         System.out.println("\n---------------------------------------");
+        // mostrara los datos ordenados de forma creciente desde el menor hasta el mayor
         System.out.println("Datos Del Array Ordenados Crecientemente");
         for(int i = 0; i < nElementos; i++){
             System.out.print(array[i] + ", ");
         }
+        // mostrara los datos ordenados de forma decreciente desde el mayor hasta el menor
         System.out.println("\nDatos Del Array Ordenados Decrecientemente");
         for(int j = (nElementos-1); j >= 0; j--){ // nElementos - 1 == ultima posicion
             System.out.print(array[j] + ", ");
