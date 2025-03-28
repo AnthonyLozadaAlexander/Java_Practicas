@@ -40,8 +40,15 @@ public class MetodoBurbuja {
                 i--; // repite la iteracion desde el mismo indice
             }
             else{
-                array[i] = input.nextInt();
+                array[i] = input.nextInt(); // se guarda el valor ingresado en dado caso que sea un numero entero
             }
+        }
+
+        System.out.println("\nDatos del Array Ingresado");
+        int countIndex = 0;
+        for(int dato: array){ // foreach para mostrar los datos ingresados
+            System.out.println("array["+countIndex+"] = " + dato);
+            countIndex++;
         }
     }
 }
