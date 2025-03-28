@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MetodoBurbuja {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int array[], nElementos;
+        int array[], nElementos, aux;
         System.out.println("---------------------------");
         System.out.println("          WELCOME");
         System.out.println("---------------------------");
@@ -41,6 +41,7 @@ public class MetodoBurbuja {
             }
             else{
                 array[i] = input.nextInt(); // se guarda el valor ingresado en dado caso que sea un numero entero
+                System.out.println("\nDato Ingresado -> Array["+i+"] = " + array[i] + "\n");
             }
         }
 
@@ -49,6 +50,26 @@ public class MetodoBurbuja {
         for(int dato: array){ // foreach para mostrar los datos ingresados
             System.out.println("array["+countIndex+"] = " + dato);
             countIndex++;
+        }
+
+        for(int i = 0; i < (nElementos-1); i++){
+            for(int j = 0; j <(nElementos - 1); j++){
+                if(array[j] > array[j+1]){ // si num_Actual > num_Siguiente, arr[0] > arr[1]
+                    // Se procedera al intercambio utilizando un auxiliar que guardara temporalmente el num_Actual
+                    aux = array[j]; // aux guardara temporalmente el num_Actual, si se cumple la condicion de actual > siguiente
+                    array[j] = array[j+1]; // el num_Actual sera ahora en la posicion del num_Siguiente
+                    array[j+1] = aux; // el num_Siguiente sera ahora el num_Actual que fue guardado en aux
+                }
+            }
+        }
+
+        System.out.println("\nDatos Del Array Ordenados");
+        for(int i = 0; i < nElementos; i++){
+            System.out.println("Array["+i+"] = " + array[i]);
+        }
+        System.out.println("---------------------------");
+        for(int i = 0; i < nElementos; i++){
+            System.out.print(array[i] + ", ");
         }
     }
 }
