@@ -54,7 +54,8 @@ public class MetodoBurbuja {
 
         for(int i = 0; i < (nElementos-1); i++){
             for(int j = 0; j <(nElementos - 1); j++){
-                if(array[j] > array[j+1]){ // si num_Actual > num_Siguiente, arr[0] > arr[1]
+                if(array[j] > array[j+1]) // si num_Actual > num_Siguiente, arr[0] > arr[1]
+                {
                     // Se procedera al intercambio utilizando un auxiliar que guardara temporalmente el num_Actual
                     aux = array[j]; // aux guardara temporalmente el num_Actual, si se cumple la condicion de actual > siguiente
                     array[j] = array[j+1]; // el num_Actual sera ahora en la posicion del num_Siguiente
@@ -64,9 +65,11 @@ public class MetodoBurbuja {
         }
 
         System.out.println("\nDatos Del Array Ordenados");
+        // verticalmente
         for(int i = 0; i < nElementos; i++){
             System.out.println("Array["+i+"] = " + array[i]);
         }
+        // horizontalmente
         System.out.println("---------------------------");
         for(int i = 0; i < nElementos; i++){
             System.out.print(array[i] + ", ");
