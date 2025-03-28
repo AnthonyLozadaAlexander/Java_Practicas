@@ -23,8 +23,8 @@ public class MediaDeArreglos {
                     System.out.println("\nError: Debe Ingresar Un Numero Entero\n");
                     input.next();
                     if (i == 0) {
-                        i++;
-                        i--;
+                        i++; // 0 + 1 = 1
+                        i--; // 1 - 1 = 0
                         Error = true;
                     }
                     else if(i > 0 && i < nums.length){
