@@ -53,6 +53,10 @@ public class ArregloCrecienteDecreciente {
             if(nums[j] > nums[j+1]){ // Decreciente: 10-9-8-7-6-5-4-3-2-1
                 decreciente = true;
             }
+            if(nums[j] == nums[j+1]){ // Iguales: 1-1-1-1-1-1-1-1-1-1
+                creciente = false;
+                decreciente = false;
+            }
         }
 
         if(creciente == true && decreciente == false){
@@ -72,7 +76,7 @@ public class ArregloCrecienteDecreciente {
             }
         }
         else if(creciente == true && decreciente == true){
-            System.out.println("\nEl Arreglo Es Creciente Y Decreciente");
+            System.out.println("\nEl Arreglo Esta Desordenado");
             for(int j = 0; j < 9; j++){
               System.out.print(nums[j] + ", ");  
             }
