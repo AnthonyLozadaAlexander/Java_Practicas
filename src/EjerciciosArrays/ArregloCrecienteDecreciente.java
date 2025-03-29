@@ -3,10 +3,11 @@ import java.util.Scanner;
 
 public class ArregloCrecienteDecreciente {
     public static void main(String[] args) {
+        try{
         Scanner input = new Scanner(System.in);
         boolean creciente = false, decreciente = false;
         int nums[], nElementos;
-        System.out.println("\n-----------------------------");
+        System.out.println("-----------------------------");
         System.out.println("          BIENVENIDO");
         System.out.println("-----------------------------");
         System.out.println("Ingrese El Tamaño Del Arreglo");
@@ -46,7 +47,7 @@ public class ArregloCrecienteDecreciente {
         }
 
         // recorrer los elementos del arreglo
-        for(int j = 0; j < 9; j++){
+        for(int j = 0; j < (nums.length) - 1; j++){
             if(nums[j] < nums[j+1]){ // Creciente: 1-2-3-4-5-6-7-8-9-10
                 creciente = true;
             }
@@ -61,33 +62,31 @@ public class ArregloCrecienteDecreciente {
 
         if(creciente == true && decreciente == false){
             System.out.println("\nEl Arreglo Es Creciente");
-            for(int j = 0; j < 9; j++){
-                if(nums[j] > nums[j+1]){ // Creciente: 1-2-3-4-5-6-7-8-9-10
+            for(int j = 0; j < nums.length; j++){
                     System.out.print(nums[j] + ", ");
-                }
             }
         }
         else if(creciente == false && decreciente == true){
             System.out.println("\nEl Arreglo Es Decreciente");
-            for(int j = 0; j < 9; j++){
-                if(nums[j] < nums[j+1]){ // Creciente: 1-2-3-4-5-6-7-8-9-10
-                    System.out.print(nums[j] + ", ");
-                }
+            for(int j = 0; j < nums.length; j++){
+                    System.out.print(nums[j] + ", "); 
             }
         }
         else if(creciente == true && decreciente == true){
             System.out.println("\nEl Arreglo Esta Desordenado");
-            for(int j = 0; j < 9; j++){
+            for(int j = 0; j < nums.length; j++){
               System.out.print(nums[j] + ", ");  
             }
         }else if(creciente == false && decreciente == false){
             System.out.println("\nEl Arreglo Tiene Sus Elementos Iguales");
-            for(int j = 0; j < 9; j++){
-                if(nums[j] == nums[j+1]){ // Creciente: 1-2-3-4-5-6-7-8-9-10
-                    System.out.print(nums[j] + ", ");
-                }
+            for(int j = 0; j < nums.length; j++){
+                
+                System.out.print(nums[j] + ", ");
             }
         }
+    }catch(Exception e){
+        System.out.println("ERROR: " + e);
+    }
         
     }
 }
