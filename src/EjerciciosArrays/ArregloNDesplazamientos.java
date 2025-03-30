@@ -53,10 +53,11 @@ public class ArregloNDesplazamientos {
         }
 
         for(int j = 0; j < Vector.length; j++){
-            int newPosition = (j + n) % Vector.length;
-            Vector[newPosition] = temp[j];
+            int newPosition = (j + n) % Vector.length; // Se calcula la posicion
+            Vector[newPosition] = temp[j]; // Se asigna el valor del arreglo temporal a la nueva posicion
         }
 
+        System.out.println("\nArreglo Desplazado:");
         int countIndex = 0;
         for(int datos: Vector){
             System.out.println("Vector["+countIndex+"] -> " + datos);
