@@ -15,6 +15,12 @@ public class DesplazarPosicionArreglo {
        System.out.print("-> ");
        Elements[i] = input.nextInt();
        }
+
+       System.out.println("Los elementos del arreglo son: ");
+       for(int k = 0; k < Elements.length; k++){
+        System.out.println("Element["+k+"] = " + Elements[k]);
+       }
+       
        last = Elements[9]; // guardamos el ultimo elemento del array en una variable
        
        for(int j = 8; j >= 0; j--){ // bajando elementos en el array
