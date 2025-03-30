@@ -11,28 +11,40 @@ public class ArregloNDesplazamientos {
         System.out.println("          BIENVENIDO");
         System.out.println("-----------------------------");
         System.out.println("Ingrese los 10 elementos al arreglo");
-        for(int i = 0; i < Vector.length; i++){
-            System.out.println("Element["+i+"]");
+        for (int i = 0; i < Vector.length; i++) {
+            System.out.println("Element[" + i + "]");
             System.out.print("-> ");
-            if(!input.hasNextInt()){
+            if (!input.hasNextInt()) {
                 System.out.println("\nERROR: Debe Ingresar Un Numero Entero\n");
                 input.next();
                 i--;
                 continue;
-            }
-            else{
-            Vector[i] = input.nextInt();
-            System.out.println("\nIndice["+i+"] Ingresado: " + Vector[i] + "\n");
+            } else {
+                Vector[i] = input.nextInt();
+                System.out.println("\nIndice[" + i + "] Ingresado: " + Vector[i] + "\n");
             }
         }
 
         System.out.println("Datos Del Arreglo");
-        for(int i = 0; i < Vector.length; i++){
-            System.out.println("Vector["+i+"] -> " + Vector[i]);
+        for (int i = 0; i < Vector.length; i++) {
+            System.out.println("Vector[" + i + "] -> " + Vector[i]);
         }
 
-        System.out.println("\nCuantos Desplazamientos Desea Realizar?");
-        System.out.print("-> ");
-        n = input.nextInt();
+        boolean validInput = false;
+        while (!validInput) {
+            System.out.println("\nCuantos Desplazamientos Desea Realizar?");
+            System.out.print("-> ");
+            if (!input.hasNextInt()) {
+                System.out.println("\nERROR: Debe Ingresar Un Numero Entero\n");
+                input.next();
+                continue;
+            }
+            n = input.nextInt();
+            if (n < 0) {
+                System.out.println("\nERROR: Debe Ingresar Un Numero Mayor A 0\n");
+                continue;
+            }
+            validInput = true;
+        }
     }
 }
