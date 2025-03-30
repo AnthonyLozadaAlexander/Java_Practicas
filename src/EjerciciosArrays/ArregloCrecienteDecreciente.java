@@ -11,14 +11,15 @@ public class ArregloCrecienteDecreciente {
             System.out.println("-----------------------------");
             System.out.println("          BIENVENIDO");
             System.out.println("-----------------------------");
-            System.out.println("Ingrese El Tamaño Del Arreglo");
             do {
+            System.out.println("Ingrese El Tamaño Del Arreglo");
                 System.out.print("-> ");
                 if (!input.hasNextInt()) {
                     System.out.println("\nERROR: Debe Ingresar Un Numero Entero\n");
                     input.next();
                     continue;
-                } else {
+                }
+                else{
                     nElementos = input.nextInt();
                     if (nElementos <= 0) {
                         System.out.println("\nERROR: Debe Ingresar Un Numero Mayor A 0\n");
