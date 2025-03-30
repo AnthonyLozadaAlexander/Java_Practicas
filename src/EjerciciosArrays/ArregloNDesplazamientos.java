@@ -31,7 +31,7 @@ public class ArregloNDesplazamientos {
         }
 
         boolean validInput = false;
-        while (!validInput) {
+        while (!validInput) { // !validInput = true
             System.out.println("\nCuantos Desplazamientos Desea Realizar?");
             System.out.print("-> ");
             if (!input.hasNextInt()) {
@@ -45,6 +45,22 @@ public class ArregloNDesplazamientos {
                 continue;
             }
             validInput = true;
+        }
+
+        int[] temp = new int[Vector.length]; // Se guarda todo el vector en un arreglo temporal
+        for (int i = 0; i < Vector.length; i++) {
+            temp[i] = Vector[i];
+        }
+
+        for(int j = 0; j < Vector.length; j++){
+            int newPosition = (j + n) % Vector.length;
+            Vector[newPosition] = temp[j];
+        }
+
+        int countIndex = 0;
+        for(int datos: Vector){
+            System.out.println("Vector["+countIndex+"] -> " + datos);
+            countIndex++;
         }
     }
 }
