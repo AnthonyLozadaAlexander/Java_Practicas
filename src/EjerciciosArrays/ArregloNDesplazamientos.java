@@ -57,7 +57,7 @@ public class ArregloNDesplazamientos {
             Vector[newPosition] = temp[j]; // Se asigna el valor del arreglo temporal a la nueva posicion
         }
 
-        System.out.println("\nArreglo Desplazado:");
+        System.out.println("\nArreglo Desplazado:"); // nuevos elementos del arreglo
         int countIndex = 0;
         for(int datos: Vector){
             System.out.println("Vector["+countIndex+"] -> " + datos);
