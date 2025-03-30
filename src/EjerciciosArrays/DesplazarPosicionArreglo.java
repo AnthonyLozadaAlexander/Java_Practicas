@@ -24,7 +24,7 @@ public class DesplazarPosicionArreglo {
        last = Elements[9]; // guardamos el ultimo elemento del array en una variable
        
        for(int j = 8; j >= 0; j--){ // bajando elementos en el array
-        Elements[j+1] = Elements[j];
+        Elements[j+1] = Elements[j]; // Elements[9] = Elements[8], Elements[8] = Elements[7], etc.
        }
 
        Elements[0] = last; // guardamos el ultimo elemento en el primer elemento del array
