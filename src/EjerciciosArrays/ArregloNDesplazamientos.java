@@ -28,7 +28,11 @@ public class ArregloNDesplazamientos {
 
         System.out.println("Datos Del Arreglo");
         for(int i = 0; i < Vector.length; i++){
-
+            System.out.println("Vector["+i+"] -> " + Vector[i]);
         }
+
+        System.out.println("\nCuantos Desplazamientos Desea Realizar?");
+        System.out.print("-> ");
+        n = input.nextInt();
     }
 }
