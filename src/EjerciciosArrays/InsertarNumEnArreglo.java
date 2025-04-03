@@ -42,9 +42,15 @@ public class InsertarNumEnArreglo {
         System.out.println("-> ");
         num = input.nextInt();
 
+        //Esto es para darnos cuenta en que posicion va el numero
         while(array[k]< num && k < 5){
             pos_num++;
             k++;
+        }
+
+        //Trasladamos, una posicion en el arreglo a los elementos que van detras de numeros
+        for(int i = 1; i >= pos_num; i--){
+            array[i+1] = array[i];
         }
     }
 }
