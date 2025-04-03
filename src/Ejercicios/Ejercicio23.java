@@ -24,7 +24,7 @@ public class Ejercicio23 {
   }
 
   public static float radicacion(float num1, float num2) {
-    return (float) Math.pow(num1, (1 / num2));
+    return (float) Math.pow(num1, (1.0 / num2)); // num1^(1/num2)
   }
 
   public static void main(String[] args) {
