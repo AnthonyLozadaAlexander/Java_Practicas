@@ -7,6 +7,7 @@ public class InsertarNumEnArreglo {
         Scanner input = new Scanner(System.in);
         int[] array = new int[10];
         boolean esCreciente = true;
+        int num = 0, pos_num=0, k = 0;
 
         System.out.println("\n-----------------------------------");
         System.out.println("              BIENVENIDO");
@@ -36,5 +37,14 @@ public class InsertarNumEnArreglo {
                 System.out.println("\nEl Arreglo No Se Encuentra Ordenado Crecientemente\n");
             }
         }while(!esCreciente); // Mientras(esCreciente == false);
+
+        System.out.println("\nDigite un elemento entero a insertar");
+        System.out.println("-> ");
+        num = input.nextInt();
+
+        while(array[k]< num && k < 5){
+            pos_num++;
+            k++;
+        }
     }
 }
