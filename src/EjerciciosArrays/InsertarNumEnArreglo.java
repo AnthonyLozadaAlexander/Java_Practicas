@@ -20,9 +20,9 @@ public class InsertarNumEnArreglo {
                 System.out.print("-> ");
                 array[i] = input.nextInt();
             }
+
             // Comprobar si el arreglo se encuentra ordenado en forma creciente
             // Creciente = 1-2-3-4-5-6-7
-
             for(int j = 0; j < array.length; j++){
                 if(array[j] < array[j+1]){ // (C[0] = 1 < C[1] = 2) == true
                     esCreciente = true;
@@ -33,7 +33,7 @@ public class InsertarNumEnArreglo {
                 }
             }
 
-            if(esCreciente == false){
+            if(!esCreciente){ // !esCreciente == false
                 System.out.println("\nEl Arreglo No Se Encuentra Ordenado Crecientemente\n");
             }
         }while(!esCreciente); // Mientras(esCreciente == false);
@@ -53,6 +53,12 @@ public class InsertarNumEnArreglo {
             array[i+1] = array[i];
         }
 
+        // insertamos el numero que el usuario ingreso en num
         array[pos_num] = num;
+
+        System.out.println("\nElementos Del Arreglo: ");
+        for(int i = 0; i < array.length; i++){
+            System.out.println("Array["+i+"] = "+ array[i]);
+        }
     }
 }
