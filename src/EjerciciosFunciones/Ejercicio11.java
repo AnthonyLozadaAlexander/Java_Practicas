@@ -59,5 +59,8 @@ public class Ejercicio11 {
             }
         }while(true);
 
+        System.out.println("El Area Del Rectangulo es: " + areaR(base, altura));
+        perimetroR(base, altura);
+
     }
 }
