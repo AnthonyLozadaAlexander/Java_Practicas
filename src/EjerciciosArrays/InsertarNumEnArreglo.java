@@ -49,8 +49,10 @@ public class InsertarNumEnArreglo {
         }
 
         //Trasladamos, una posicion en el arreglo a los elementos que van detras de numeros
-        for(int i = 1; i >= pos_num; i--){
+        for(int i = 4; i >= pos_num; i--){
             array[i+1] = array[i];
         }
+
+        array[pos_num] = num;
     }
 }
