@@ -46,6 +46,7 @@ public class SepararParesEImpares {
 
             int IndexP = 0;
             int IndexImp = 0;
+
             System.out.println("Array Pares["+countPares+"]");
             for(int datos: pares){
                 System.out.println("Pares["+ IndexP+"] = " + datos );
@@ -54,7 +55,7 @@ public class SepararParesEImpares {
 
             System.out.println("\nArray Impares["+countImpares+"]");
             for(int datos: impares){
-                System.out.println("Impares["+ IndexImp+"] = " + datos + "\n");
+                System.out.println("Impares["+ IndexImp+"] = " + datos);
                 IndexImp++;
             }
 
