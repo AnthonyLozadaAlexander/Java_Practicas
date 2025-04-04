@@ -12,8 +12,9 @@ public class InsertarNumEnArreglo {
         System.out.println("\n-----------------------------------");
         System.out.println("              BIENVENIDO");
         System.out.println("-------------------------------------");
-        System.out.println("Ingrese Los Elementos Al Arreglo: ");
         do {
+        System.out.println("Ingrese Los Elementos Al Arreglo: ");
+
             // se ingresan primero 5 elementos
             for(int i = 0; i < 5; i++) {
                 System.out.println("\nArray["+i+"]");
