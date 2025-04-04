@@ -8,8 +8,8 @@ public class SepararParesEImpares {
         int countPares = 0, countImpares = 0;
         int[] nums = new int[10];
 
-        System.out.println("Ingrese Elementos Enteros al Array["+nums.length+"]");
-        for(int i = 0; i < nums.length; i++) {
+        System.out.println("Ingrese Elementos Enteros al Array[" + nums.length + "]");
+        for (int i = 0; i < nums.length; i++) {
             System.out.println("nums[" + i + "]");
             System.out.print("-> ");
             if (!input.hasNextInt()) {
@@ -28,36 +28,36 @@ public class SepararParesEImpares {
             }
         }
 
-            int P = 0, Imp = 0;
-            int[] pares = new int[countPares];
-            int[] impares = new int[countImpares];
+        int P = 0, Imp = 0;
+        int[] pares = new int[countPares];
+        int[] impares = new int[countImpares];
 
-            for(int j = 0; j < nums.length; j++){
+        for (int j = 0; j < nums.length; j++) {
 
-                    if(nums[j] % 2 == 0){
-                       pares[P] = nums[j];
-                       P++;
-                    }
-                    if(nums[j] % 2 != 0){
-                        impares[Imp] = nums[j];
-                        Imp++;
-                    }
+            if (nums[j] % 2 == 0) {
+                pares[P] = nums[j];
+                P++;
             }
-
-            int IndexP = 0;
-            int IndexImp = 0;
-
-            System.out.println("Array Pares["+countPares+"]");
-            for(int datos: pares){
-                System.out.println("Pares["+ IndexP+"] = " + datos );
-                IndexP++;
+            if (nums[j] % 2 != 0) {
+                impares[Imp] = nums[j];
+                Imp++;
             }
+        }
 
-            System.out.println("\nArray Impares["+countImpares+"]");
-            for(int datos: impares){
-                System.out.println("Impares["+ IndexImp+"] = " + datos);
-                IndexImp++;
-            }
+        int IndexP = 0;
+        int IndexImp = 0;
+
+        System.out.println("Array Pares[" + countPares + "]");
+        for (int datos : pares) {
+            System.out.println("Pares[" + IndexP + "] = " + datos);
+            IndexP++;
+        }
+
+        System.out.println("\nArray Impares[" + countImpares + "]");
+        for (int datos : impares) {
+            System.out.println("Impares[" + IndexImp + "] = " + datos);
+            IndexImp++;
+        }
 
     }
 }
