@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Ejercicio12 {
     public static void factorial(int limit){
         int factorial = 1;
+        for(int i = 1; i <= limit; i++)
+        {
+            factorial = factorial * i;
+        }
+        System.out.println("El Factorial de " + limit + "! = " + factorial);
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -17,19 +22,20 @@ public class Ejercicio12 {
             System.out.println("Ingrese el limite de la secuencia");
             System.out.print("-> ");
             if(!input.hasNextInt()){
-                System.out.println("\nError: Debe Ingresar Un Numero Positivo");
+                System.out.println("\nError: Debe Ingresar Un Numero Positivo\n");
                 input.nextLine();
-                continue;
             }
             else {
                 limit = input.nextInt();
                 if(limit < 0){
-                    System.out.println("\nError: Debe Ingresar Un Numero Positivo");
+                    System.out.println("\nError: Debe Ingresar Un Numero Positivo\n");
                 }
                 else{
                     System.out.println("\nDato Ingresado: " + limit + "\n");
                 }
             }
-        }while(limit < 0);
+        }while(limit <= 0);
+
+        factorial(limit);
     }
 }
