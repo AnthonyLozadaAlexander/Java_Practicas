@@ -9,33 +9,31 @@ public class BuscarElementoArreglo {
         int num;
         boolean creciente = false;
         System.out.println("Ingrese Datos Al Arreglo");
-        do{
-        // Pedimos el arreglo
-            for(int i = 0; i < arreglo.length; i++) {
+        do {
+            // Pedimos el arreglo
+            for (int i = 0; i < arreglo.length; i++) {
                 System.out.println("Arreglo[" + i + "]");
                 System.out.print("-> ");
-                if(!input.hasNextInt()){
+                if (!input.hasNextInt()) {
                     System.out.println("\nError: Ingrese un numero entero valido\n");
                     input.next();
                     i--;
-                }
-                else {
+                } else {
                     arreglo[i] = input.nextInt();
                 }
             }
 
-            int index = 0;
-            if(arreglo[index] < arreglo[index+1]){
-                index++;
-                System.out.println("\nEl Arreglo Es Creciente");
-                creciente = true;
-            }
-            else {
+            for (int j = 0; j < (arreglo.length) - 1; j++) { // j < 9
 
-                System.out.println("\nError: El Arreglo Esta Decreciente\n");
-                creciente = false;
+                if (arreglo[j] < arreglo[j + 1]) {
+                    creciente = true;
+                } else {
+                    creciente = false;
+                }
             }
 
-        }while(creciente == false);
+            System.out.println("El Arreglo es Creciente? = " + creciente);
+
+        } while (creciente == false);
     }
 }
