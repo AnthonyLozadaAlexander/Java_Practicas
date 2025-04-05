@@ -38,11 +38,12 @@ public class ArregloNDesplazamientos {
                 System.out.println("\nERROR: Debe Ingresar Un Numero Entero\n");
                 input.next();
                 continue;
-            }
-            n = input.nextInt();
-            if (n < 0) {
-                System.out.println("\nERROR: Debe Ingresar Un Numero Mayor A 0\n");
-                continue;
+            } else {
+                n = input.nextInt();
+                if (n < 0) {
+                    System.out.println("\nERROR: Debe Ingresar Un Numero Mayor A 0\n");
+                    continue;
+                }
             }
             validInput = true;
         }
@@ -52,15 +53,15 @@ public class ArregloNDesplazamientos {
             temp[i] = Vector[i];
         }
 
-        for(int j = 0; j < Vector.length; j++){
+        for (int j = 0; j < Vector.length; j++) {
             int newPosition = (j + n) % Vector.length; // Se calcula la posicion
             Vector[newPosition] = temp[j]; // Se asigna el valor del arreglo temporal a la nueva posicion
         }
 
         System.out.println("\nArreglo Desplazado:"); // nuevos elementos del arreglo
         int countIndex = 0;
-        for(int datos: Vector){
-            System.out.println("Vector["+countIndex+"] -> " + datos);
+        for (int datos : Vector) {
+            System.out.println("Vector[" + countIndex + "] -> " + datos);
             countIndex++;
         }
     }
