@@ -27,6 +27,12 @@ public class EjercicioSepararParesImparesV2 {
                     i--;
                 }else {
                     System.out.println("\nElemento Ingresado: " + "array[" + i + "] = " + array[i]);
+                    if(array[i] % 2 == 0){
+                        countPares++;
+                    }
+                    else{
+                        countImpares++;
+                    }
                 }
             }
         }
@@ -37,17 +43,12 @@ public class EjercicioSepararParesImparesV2 {
             System.out.println("array["+i+"] = " + array[i]);
         }
 
-        for(int i = 0; i < array.length; i++){
-            if(array[i] % 2 == 0){
-                countPares++;
-            }
-            else{
-                countImpares++;
-            }
-        }
-
         int [] pares = new int[countPares];
         int [] impares = new int[countImpares];
+
+        for(int i = 0; i < array.length; i++){
+
+        }
 
 
     }
