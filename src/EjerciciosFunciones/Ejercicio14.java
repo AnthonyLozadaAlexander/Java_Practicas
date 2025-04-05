@@ -23,6 +23,7 @@ public class Ejercicio14 {
             System.out.print("-> ");
             if(!input.hasNextFloat()) {
                 System.out.println("\nError: Debe Ingresar Un Numero\n");
+                input.next(); // reset scanner
                 continue;
             }
             else{
