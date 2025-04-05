@@ -66,7 +66,7 @@ public class EjercicioSepararParesImparesV2 {
             System.out.println("Pares["+i+"] = " + pares[i]);
         }
 
-        System.out.println("\nArreglo Impares"+countImpares+"]");
+        System.out.println("\nArreglo Impares["+countImpares+"]");
         for(int i = 0; i < impares.length; i++){
             System.out.println("Impares["+i+"] = " + impares[i]);
         }
