@@ -47,7 +47,12 @@ public class EjercicioSepararParesImparesV2 {
         int [] impares = new int[countImpares];
 
         for(int i = 0; i < array.length; i++){
-
+            if(array[i] % 2 == 0){
+                pares[i] = array[i];
+            }
+            else{
+                impares[i] = array[i];
+            }
         }
 
 
