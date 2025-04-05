@@ -1,6 +1,7 @@
 package CalcularFiguras;
 
-public class MetodoCalcular {
+public class MetodoCalcular
+{
   public static double areaCuadrado(double lado) {
     return lado * lado;
   }
