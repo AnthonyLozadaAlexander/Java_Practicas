@@ -27,12 +27,18 @@ public class BuscarElementoArreglo {
 
                 if (arreglo[j] < arreglo[j + 1]) {
                     creciente = true;
-                } else {
+                }
+                if(arreglo[j] > arreglo[j+1]){
                     creciente = false;
+                    break; // se rompe el for, dado que es decreciente
                 }
             }
 
-            System.out.println("El Arreglo es Creciente? = " + creciente);
+            if(creciente == false) {
+                System.out.println("\nEl Arreglo Esta Desordenado, Digite Nuevamente El Arreglo\n");
+            }else{
+                System.out.println("\nEl Arreglo Esta Ordenado Crecientemente\n");
+            }
 
         } while (creciente == false);
     }
