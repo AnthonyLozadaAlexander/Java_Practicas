@@ -44,7 +44,7 @@ public class BuscarElementoArreglo {
 
         boolean On = false;
         do {
-            System.out.println("Digite el numero a buscar");
+            System.out.println("Digite el numero a buscar en el arreglo");
             System.out.print("-> ");
             if(!input.hasNextInt()){
                 System.out.println("\nError: Ingrese un numero valido\n");
