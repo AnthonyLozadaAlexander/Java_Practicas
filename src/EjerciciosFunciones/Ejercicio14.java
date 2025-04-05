@@ -20,7 +20,12 @@ public class Ejercicio14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         float num = 0.0f;
+do {
+    System.out.println("Digite un numero");
+    System.out.print("-> ");
 
-        System.out.println("");
+
+    num = input.nextFloat();
+}while(true);
     }
 }
