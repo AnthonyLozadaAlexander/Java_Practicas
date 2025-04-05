@@ -30,9 +30,11 @@ public class BuscarElementoArreglo {
                 creciente = true;
             }
             else{
+
+                System.out.println("\nError: El Arreglo Esta Decreciente\n");
                 creciente = false;
             }
 
-        }while(!creciente);
+        }while(creciente == false);
     }
 }
