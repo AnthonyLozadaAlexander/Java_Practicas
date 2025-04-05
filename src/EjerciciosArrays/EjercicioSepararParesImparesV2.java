@@ -55,6 +55,15 @@ public class EjercicioSepararParesImparesV2 {
             }
         }
 
+        System.out.println("\nElementos Pares");
+        for(int i = 0; i < pares.length; i++){
+            System.out.println("Pares["+i+"] = " + pares[i]);
+        }
+
+        System.out.println("\nElementos Impares");
+        for(int i = 0; i < impares.length; i++){
+            System.out.println("Impares["+i+"] = " + impares[i]);
+        }
 
     }
 }
