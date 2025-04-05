@@ -41,5 +41,46 @@ public class BuscarElementoArreglo {
             }
 
         } while (creciente == false);
+
+        boolean On = false;
+        do {
+            System.out.println("Digite el numero a buscar");
+            System.out.print("-> ");
+            if(!input.hasNextInt()){
+                System.out.println("\nError: Ingrese un numero valido\n");
+                input.next();
+                On = false;
+            }
+            else {
+                num = input.nextInt();
+                System.out.println("\nNumero Ingresado: " + num+ "\n");
+
+                boolean indexEncontrado = true;
+                int i = 0;
+                int index = 0;
+                while(i < arreglo.length)
+                {
+                    if(arreglo[i] == num){
+                        index = i;
+                        indexEncontrado = true;
+                        i = 9;
+                    }
+                    else{
+                        indexEncontrado = false;
+                    }
+                    i++;
+                }
+
+                if(indexEncontrado == true){
+                    System.out.println("Array["+index+"] = " + arreglo[index]);
+                    On = true;
+                }
+                else{
+                    System.out.println("Error: No se encontro el numero ingresado en el Arreglo");
+                    On = false;
+                }
+            }
+
+        }while(On == false);
     }
 }
