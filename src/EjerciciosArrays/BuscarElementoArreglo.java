@@ -27,9 +27,10 @@ public class BuscarElementoArreglo {
             int index = 0;
             if(arreglo[index] < arreglo[index+1]){
                 index++;
+                System.out.println("\nEl Arreglo Es Creciente");
                 creciente = true;
             }
-            else{
+            else {
 
                 System.out.println("\nError: El Arreglo Esta Decreciente\n");
                 creciente = false;
