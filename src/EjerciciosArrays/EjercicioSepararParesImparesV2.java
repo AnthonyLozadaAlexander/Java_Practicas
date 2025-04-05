@@ -21,6 +21,7 @@ public class EjercicioSepararParesImparesV2 {
             }
             else {
                 array[i] = input.nextInt();
+                System.out.println("Elemento Ingresado: " + "array["+i+"] = " + array[i]);
             }
         }
     }
