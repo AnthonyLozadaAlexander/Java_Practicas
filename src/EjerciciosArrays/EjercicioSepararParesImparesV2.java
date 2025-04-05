@@ -16,11 +16,15 @@ public class EjercicioSepararParesImparesV2 {
             System.out.print("-> ");
             if(!input.hasNextInt()){
                 System.out.println("\nError: Dato Invalido, Ingrese Un Numero Entero\n");
-                input.nextInt();
+                input.next();
                 i = i-1;
             }
             else {
                 array[i] = input.nextInt();
+                if(array[i] == 0){
+                    System.out.println("\nError: Debe Ingresar Numeros Distintos De 0\n");
+                    i--;
+                }
                 System.out.println("Elemento Ingresado: " + "array["+i+"] = " + array[i]);
             }
         }
