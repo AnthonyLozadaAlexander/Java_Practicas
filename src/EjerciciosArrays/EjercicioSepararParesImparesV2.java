@@ -49,6 +49,7 @@ public class EjercicioSepararParesImparesV2 {
         int indexPar = 0;
         int indexImpar = 0;
 
+        // Almacenamiento de los elementos pares e impares en sus respectivos arreglos.
         for(int i = 0; i < array.length; i++){
             if(array[i] % 2 == 0){
                 pares[indexPar] = array[i];
@@ -60,12 +61,12 @@ public class EjercicioSepararParesImparesV2 {
             }
         }
 
-        System.out.println("\nElementos Pares");
+        System.out.println("\nArreglo Pares["+countPares+"]");
         for(int i = 0; i < pares.length; i++){
             System.out.println("Pares["+i+"] = " + pares[i]);
         }
 
-        System.out.println("\nElementos Impares");
+        System.out.println("\nArreglo Impares"+countImpares+"]");
         for(int i = 0; i < impares.length; i++){
             System.out.println("Impares["+i+"] = " + impares[i]);
         }
