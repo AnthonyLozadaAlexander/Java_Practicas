@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class EjercicioSepararParesImparesV2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int countPares = 0, countImpares = 0;
         int[] array = new int[10];
 
         System.out.println("-------------------------");
@@ -30,9 +31,24 @@ public class EjercicioSepararParesImparesV2 {
             }
         }
 
-        System.out.println("\nDatos Ingresados: ");
+        System.out.println("\nArray Base");
+        System.out.println("Datos Ingresados: ");
         for(int i = 0; i < array.length; i++){
             System.out.println("array["+i+"] = " + array[i]);
         }
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] % 2 == 0){
+                countPares++;
+            }
+            else{
+                countImpares++;
+            }
+        }
+
+        int [] pares = new int[countPares];
+        int [] impares = new int[countImpares];
+
+
     }
 }
