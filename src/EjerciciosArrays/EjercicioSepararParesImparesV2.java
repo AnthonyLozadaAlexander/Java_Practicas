@@ -25,12 +25,12 @@ public class EjercicioSepararParesImparesV2 {
                     System.out.println("\nError: Debe Ingresar Numeros Distintos De 0\n");
                     i--;
                 }else {
-                    System.out.println("Elemento Ingresado: " + "array[" + i + "] = " + array[i]);
+                    System.out.println("\nElemento Ingresado: " + "array[" + i + "] = " + array[i]);
                 }
             }
         }
 
-        System.out.println("Datos Ingresados: ");
+        System.out.println("\nDatos Ingresados: ");
         for(int i = 0; i < array.length; i++){
             System.out.println("array["+i+"] = " + array[i]);
         }
