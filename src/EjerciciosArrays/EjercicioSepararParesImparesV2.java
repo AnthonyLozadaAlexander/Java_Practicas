@@ -23,9 +23,11 @@ public class EjercicioSepararParesImparesV2 {
                 array[i] = input.nextInt();
                 if(array[i] == 0){
                     System.out.println("\nError: Debe Ingresar Numeros Distintos De 0\n");
-                    i--;
+                    i=i+1;
+                    i = i-1;
+                }else {
+                    System.out.println("Elemento Ingresado: " + "array[" + i + "] = " + array[i]);
                 }
-                System.out.println("Elemento Ingresado: " + "array["+i+"] = " + array[i]);
             }
         }
 
