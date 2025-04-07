@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class OrdenamientoPorInsercion {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int arreglo[], nElementos = 0;
+    int arreglo[], nElementos = 0 , i = 0;
 
     System.out.println("---------------------------------------------");
-    System.out.println("            ORDENAMIENTO POR INSERCION          ");
-    System.out.println("---------------------------------------------\n");
+    System.out.println("           ORDENAMIENTO POR INSERCION          ");
+    System.out.println("---------------------------------------------");
     do {
       System.out.println("Ingrese el tamaño del arreglo");
       System.out.print("-> ");
@@ -28,6 +28,31 @@ public class OrdenamientoPorInsercion {
     } while (nElementos <= 0);
 
     arreglo = new int[nElementos];
+
+    do{
+    input = new Scanner(System.in);
+    System.out.println("Ingrese los elementos enteros al arreglo");
+    for(i = 0; i < arreglo.length; i++){
+      System.out.println("Arreglo["+i+"]");
+      System.out.print("-> ");
+      if(!input.hasNextInt()){
+        System.out.println("\nEl elemento del arreglo debe ser un numero Entero\n");
+        input.next();
+        i--;
+        continue;
+      }
+      else{
+        arreglo[i] = input.nextInt();
+        if(arreglo[i] <= 0){
+          System.out.println("\nError: El Elemento Debe Ser Mayor a 0\n");
+          i--;
+        }
+        else{
+          System.out.println("\nElemento Ingresado: " + "Arreglo["+i+"] = " + arreglo[i]);
+        }
+      }
+    }
+    }while(arreglo[i] <= 0);
 
   }
 }
