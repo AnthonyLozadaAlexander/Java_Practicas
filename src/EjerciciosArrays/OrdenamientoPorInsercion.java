@@ -67,5 +67,14 @@ public class OrdenamientoPorInsercion {
       arreglo[posicion] = aux; // refresh del numero actual
     }
 
+    System.out.println("\nOrden Ascendente del arreglo: ");
+    for(int j = 0; j < nElementos; j++){
+      System.out.println("Arreglo["+j+"] = " + arreglo[j]);
+    }
+    System.out.println("--------------------------------");
+    for(int k = 0; k < nElementos; k++){
+      System.out.print(arreglo[k] + ", ");
+    }
+    
   }
 }
