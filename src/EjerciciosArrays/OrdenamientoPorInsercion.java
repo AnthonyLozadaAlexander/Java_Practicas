@@ -57,7 +57,14 @@ public class OrdenamientoPorInsercion {
     //Ordenamiento por insercion
     for(int j = 0; j < nElementos; j++){
       posicion = j;
-      aux = arreglo[j];
+      aux = arreglo[j]; // aux guarda el valor del elemento a insertar
+      while((posicion > 0) && (arreglo[posicion-1] > aux))
+      {
+        arreglo[posicion] = arreglo[posicion-1]; 
+        posicion--;
+      }
+
+      arreglo[posicion] = aux; // refresh del numero actual
     }
 
   }
