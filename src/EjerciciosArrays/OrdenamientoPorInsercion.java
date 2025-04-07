@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class OrdenamientoPorInsercion {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int arreglo[], nElementos = 0 , i = 0;
+    int arreglo[], nElementos = 0 , i = 0, posicion, aux;
 
     System.out.println("---------------------------------------------");
     System.out.println("           ORDENAMIENTO POR INSERCION          ");
@@ -31,7 +31,7 @@ public class OrdenamientoPorInsercion {
 
     do{
     input = new Scanner(System.in);
-    System.out.println("Ingrese los elementos enteros al arreglo");
+    System.out.println("Digite los elementos enteros al arreglo");
     for(i = 0; i < arreglo.length; i++){
       System.out.println("Arreglo["+i+"]");
       System.out.print("-> ");
@@ -53,6 +53,12 @@ public class OrdenamientoPorInsercion {
       }
     }
     }while(arreglo[i] <= 0);
+
+    //Ordenamiento por insercion
+    for(int j = 0; j < nElementos; j++){
+      posicion = j;
+      aux = arreglo[j];
+    }
 
   }
 }
