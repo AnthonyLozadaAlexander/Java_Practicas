@@ -29,7 +29,7 @@ public class OrdenamientoPorInsercion {
 
     arreglo = new int[nElementos];
 
-    do{
+
     input = new Scanner(System.in);
     System.out.println("Digite los elementos enteros al arreglo");
     for(i = 0; i < arreglo.length; i++){
@@ -39,7 +39,6 @@ public class OrdenamientoPorInsercion {
         System.out.println("\nEl elemento del arreglo debe ser un numero Entero\n");
         input.next();
         i--;
-        continue;
       }
       else{
         arreglo[i] = input.nextInt();
@@ -52,7 +51,11 @@ public class OrdenamientoPorInsercion {
         }
       }
     }
-    }while(arreglo[i] <= 0);
+
+    System.out.println("Arreglo Original: ");
+    for(i = 0; i < nElementos; i++){
+      System.out.println("Arreglo["+i+"] = " + arreglo[i]);
+    }
 
     //Ordenamiento por insercion
     for(int j = 0; j < nElementos; j++){
@@ -73,6 +76,15 @@ public class OrdenamientoPorInsercion {
     }
     System.out.println("--------------------------------");
     for(int k = 0; k < nElementos; k++){
+      System.out.print(arreglo[k] + ", ");
+    }
+
+    System.out.println("\n\nOrden Descendente del arreglo: ");
+    for(int j = nElementos-1; j >= 0; j--){
+      System.out.println("Arreglo["+j+"] = " + arreglo[j]);
+    }
+    System.out.println("--------------------------------");
+    for(int k = nElementos-1; k >= 0; k--){
       System.out.print(arreglo[k] + ", ");
     }
     
