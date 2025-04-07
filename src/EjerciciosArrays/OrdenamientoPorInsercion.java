@@ -48,7 +48,7 @@ public class OrdenamientoPorInsercion {
           i--;
         }
         else{
-          System.out.println("\nElemento Ingresado: " + "Arreglo["+i+"] = " + arreglo[i]);
+          System.out.println("\nElemento Ingresado: " + "Arreglo["+i+"] = " + arreglo[i] + "\n");
         }
       }
     }
