@@ -5,15 +5,30 @@ public class OrdenSecuencial {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int [] arreglo = {4,1,5,2,3};
-        int dato;
+        int guardar = 0;
+        int dato=0;
         boolean flag = false;
 
         System.out.println("|----------------------------|");
         System.out.println("|          BIENVENIDO        |");
         System.out.println("|----------------------------|");
-        System.out.println("Ingrese el numero a buscar");
-        System.out.print("-> ");
-        dato = input.nextInt();
+        do {
+            System.out.println("Ingrese el numero a buscar");
+            System.out.print("-> ");
+            if(!input.hasNextInt()){
+                System.out.println("\nError: Debe Ingresar Un Numero\n");
+                input.next();
+            }
+            else {
+                dato = input.nextInt();
+                if(dato < 0){
+                    System.out.println("\nError: El Dato Ingresado No Puede Ser Negativo\n");
+                }
+                else{
+                    System.out.println("\nDato Ingresado: " + dato + "\n");
+                }
+            }
+        }while(dato < 0);
 
         // Busqueda Secuencial
         int i = 0;
@@ -21,9 +36,16 @@ public class OrdenSecuencial {
         while(i < 5 && flag == false){
             if(arreglo[i] == dato){
                 flag = true;
+                guardar = i;
             }
             i++;
         }
 
+        if(flag == false){
+            System.out.println("\nNo se encontro el numero en el Arreglo\n");
+        }
+        else{
+            System.out.println("\nEl Numero Encontrado es: " + arreglo[guardar]);
+        }
     }
 }
