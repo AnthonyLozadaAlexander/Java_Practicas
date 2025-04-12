@@ -19,8 +19,11 @@ public class OrdenSecuencial {
         int i = 0;
         // Mientras se recorra todo el array y no se haya encontrado el numero
         while(i < 5 && flag == false){
-
-        };
+            if(arreglo[i] == dato){
+                flag = true;
+            }
+            i++;
+        }
 
     }
 }
