@@ -12,8 +12,12 @@ public class OrdenSecuencial {
         System.out.println("|----------------------------|");
         System.out.println("|          BIENVENIDO        |");
         System.out.println("|----------------------------|");
+        System.out.println("Elementos Del Arreglo");
+        for(int i = 0; i < arreglo.length; i++){
+            System.out.println("Arreglo["+i+"] = " + arreglo[i]);
+        }
         do {
-            System.out.println("Ingrese el numero a buscar");
+            System.out.println("\nIngrese el numero a buscar");
             System.out.print("-> ");
             if(!input.hasNextInt()){
                 System.out.println("\nError: Debe Ingresar Un Numero\n");
@@ -25,7 +29,7 @@ public class OrdenSecuencial {
                     System.out.println("\nError: El Dato Ingresado No Puede Ser Negativo\n");
                 }
                 else{
-                    System.out.println("\nDato Ingresado: " + dato + "\n");
+                    System.out.println("\nDato Ingresado: " + dato);
                 }
             }
         }while(dato < 0);
@@ -45,8 +49,8 @@ public class OrdenSecuencial {
             System.out.println("\nNo se encontro el numero en el Arreglo\n");
         }
         else{
-            System.out.println("\nEl Numero Encontrado es: " + arreglo[guardar]);
-            System.out.println("Posicion: " + (i-1));
+            System.out.println("El Numero Encontrado es: " + arreglo[guardar]);
+            System.out.println("Ubicacion: " + "arreglo["+(i-1+"]"));
         }
     }
 }
