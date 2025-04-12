@@ -29,7 +29,6 @@ public class OrdenamientoPorInsercion {
 
     arreglo = new int[nElementos];
 
-
     input = new Scanner(System.in);
     System.out.println("Digite los elementos enteros al arreglo");
     for(i = 0; i < arreglo.length; i++){
