@@ -8,6 +8,7 @@ public class OrdenSecuencial {
         int guardar = 0;
         int dato=0;
         boolean flag = false;
+        boolean On = false;
 
         System.out.println("|----------------------------|");
         System.out.println("|          BIENVENIDO        |");
@@ -22,17 +23,20 @@ public class OrdenSecuencial {
             if(!input.hasNextInt()){
                 System.out.println("\nError: Debe Ingresar Un Numero\n");
                 input.next();
+                On = false;
             }
             else {
                 dato = input.nextInt();
                 if(dato < 0){
                     System.out.println("\nError: El Dato Ingresado No Puede Ser Negativo\n");
+                    On = false;
                 }
                 else{
                     System.out.println("\nDato Ingresado: " + dato);
+                    On = true;
                 }
             }
-        }while(dato < 0);
+        }while(On == false);
 
         // Busqueda Secuencial
         int i = 0;
