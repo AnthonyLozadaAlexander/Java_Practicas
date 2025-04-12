@@ -46,6 +46,7 @@ public class OrdenSecuencial {
         }
         else{
             System.out.println("\nEl Numero Encontrado es: " + arreglo[guardar]);
+            System.out.println("Posicion: " + (i-1));
         }
     }
 }
