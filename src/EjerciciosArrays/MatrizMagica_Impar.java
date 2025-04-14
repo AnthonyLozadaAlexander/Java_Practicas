@@ -2,18 +2,18 @@ package EjerciciosArrays;
 
 public class MatrizMagica_Impar {
     public static void main(String[] args) {
-            int num = 3;
+            int n = 3;
 
             int i_Anterior = 0;
             int j_Anterior = 0;
 
-            int puntoInicial = num / 2;
+            int puntoInicial = n / 2;
 
-            int[][] matrizMagica = new int[num][num];
+            int[][] matrizMagica = new int[n][n];
             int temp = 1;
 
-            for(int i = 0; i < num; i++){
-                for(int j = 0; j < num; j++){
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j < n; j++){
                     matrizMagica[i][j] = 0;
                 }
             }
@@ -21,7 +21,7 @@ public class MatrizMagica_Impar {
             int i = 0;
             int j = puntoInicial;
 
-            while(temp != (num*num)+1){
+            while(temp != (n*n)+1){
                 if(matrizMagica[i][j] == 0){ // verifica si esta vacio
                     matrizMagica[i][j] = temp;
                 }
@@ -38,18 +38,26 @@ public class MatrizMagica_Impar {
                 j++;
                 i--;
 
-                if(i < 0 && j == num){ // esquina superior
-                    i = num - 1;
+                if(i < 0 && j == n){ // esquina superior
+                    i = n - 1;
                     j = 0;
                 }
                 else if(i < 0)
                 {
-                    i = i + num;
+                    i = i + n;
                 }
-                else if(j == num){
+                else if(j == n){
                     j = 0;
                 }
 
+            }
+
+            for(int x = 0; x < n; x++){
+                String resultado = "";
+                for(int y = 0; y < n; y++){
+                    resultado = resultado + " " + matrizMagica[x][y];
+                }
+                System.out.println("" + resultado);
             }
     }
 }
