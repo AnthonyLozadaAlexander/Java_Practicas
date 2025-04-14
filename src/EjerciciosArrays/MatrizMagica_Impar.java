@@ -37,8 +37,17 @@ public class MatrizMagica_Impar {
                 temp++;
                 j++;
                 i--;
-                if(i < 0 && j == num){
 
+                if(i < 0 && j == num){ // esquina superior
+                    i = num - 1;
+                    j = 0;
+                }
+                else if(i < 0)
+                {
+                    i = i + num;
+                }
+                else if(j == num){
+                    j = 0;
                 }
 
             }
