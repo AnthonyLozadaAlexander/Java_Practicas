@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MatrizSimetrica {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int matriz[][], nFilas = 0, nColumnas = 0;
+    int Matrix[][], nFilas = 0, nColumnas = 0;
     System.out.println("----------------------------");
     System.out.println("         BIENVENIDO         ");
     System.out.println("----------------------------");
@@ -37,13 +37,22 @@ public class MatrizSimetrica {
               continue;
             } else {
               System.out.println("Columnas Ingresadas = [" + nColumnas + "]");
-              System.out.println("----------------------------");
+              System.out.println("-----------------------------------------------");
             }
           }
         }
       }
     } while (nFilas <= 0 || nColumnas <= 0);
-    matriz = new int[nFilas][nColumnas];
-
+    Matrix = new int[nFilas][nColumnas];
+    System.out.println("\nIngrese Los Elementos En La Matriz["+nFilas+"]["+nColumnas+"]");
+    System.out.println("---------------------------------------------------------");
+    for(int F = 0; F < nFilas; F++){
+      for(int C = 0; C < nColumnas; C++){
+        System.out.println("Fila["+F+"]");
+        System.out.println("Columna["+C+"]");
+        System.out.print("-> ");
+        Matrix[F][C] = input.nextInt();
+      }
+    }
   }
 }
