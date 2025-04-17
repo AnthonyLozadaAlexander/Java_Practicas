@@ -46,9 +46,10 @@ public class MatrizDefinicion {
 
     System.out.println("\n---------------------------------");
     System.out.println("Ingrese los valores de la matriz:  ");
+    System.out.println("-----------------------------------");
     for (int f = 0; f < matriz.length; f++) {
+      System.out.println("-----------------------------------");
       for (int c = 0; c < matriz[f].length; c++) {
-        System.out.println("-----------------------------------");
         System.out.println("Fila[" + f + "]");
         System.out.println("Columna[" + c + "]");
         System.out.print("-> ");
@@ -61,9 +62,9 @@ public class MatrizDefinicion {
         } else {
           matriz[f][c] = input.nextInt();
           System.out.println("Valor ingresado: " + matriz[f][c]);
-          System.out.println("-----------------------------------");
         }
       }
+      System.out.println("-----------------------------------");
     }
 
     System.out.println("\n-----------------------------------");
