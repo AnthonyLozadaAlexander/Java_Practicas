@@ -44,5 +44,19 @@ public class MatrizDefinicion {
 
       }
     } while (nFilas <= 0 || nColumnas <= 0);
+    matriz = new int[nFilas][nColumnas];
+
+    System.out.println("\n---------------------------------");
+    System.out.println("Ingrese los valores de la matriz:  ");
+    System.out.println("-----------------------------------");
+    for(int f = 0; f < matriz.length; f++){
+      for(int c = 0; c < matriz[f].length; c++){
+        System.out.println("Fila["+f+"]");
+        System.out.println("Columna["+c+"]");
+        System.out.print("-> ");
+        matriz[f][c] = input.nextInt();
+      }
+
+    }
   }
 }
