@@ -61,11 +61,17 @@ public class MatrizSimetrica {
                 j = 0;
                 while (j < nColumnas && simetrica == true) {
                     if (Matrix[i][j] != Matrix[j][i]) {
-                        simetrica = false;
+                        simetrica = false; // si son distintos se rompe y eso significa que no es simetrica
                     }
                     j++;
                 }
                 i++;
+            }
+            if (simetrica == true) {
+                System.out.println("\nLa Matriz Es Simetrica\n");
+            }
+            else{
+                System.out.println("\nLa Matriz No Es Simetrica\n");
             }
         } else {
             System.out.println("\nLa Matriz No Es Simetrica\n");
