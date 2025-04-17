@@ -67,7 +67,7 @@ public class MatrizDefinicion {
       System.out.println("-----------------------------------");
     }
 
-    System.out.println("\n-----------------------------------");
+    System.out.println("-----------------------------------");
     for (int f = 0; f < matriz.length; f++) {
       for (int c = 0; c < matriz[f].length; c++) {
         System.out.print(matriz[f][c] + " ");
