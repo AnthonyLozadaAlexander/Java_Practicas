@@ -13,15 +13,13 @@ public class MatrizDefinicion {
     do {
       System.out.println("Ingrese el numero de filas de la matriz");
       System.out.print("-> ");
-      if (!input.hasNextInt()) 
-      {
+      if (!input.hasNextInt()) {
         System.out.println("\nError: Debe ingresar un numero entero");
         System.out.println("Por favor, vuelva a intentarlo.\n");
         input.next(); // Limpiar el buffer
         continue; // Volver a pedir el número de filas
-      }
-      else{
-        
+      } else {
+
         nFilas = input.nextInt();
         System.out.println("Ingrese el numero de columnas de la matriz");
         System.out.print("-> ");
@@ -49,23 +47,31 @@ public class MatrizDefinicion {
     System.out.println("\n---------------------------------");
     System.out.println("Ingrese los valores de la matriz:  ");
     System.out.println("-----------------------------------");
-    for(int f = 0; f < matriz.length; f++){
-      for(int c = 0; c < matriz[f].length; c++){
-        System.out.println("Fila["+f+"]");
-        System.out.println("Columna["+c+"]");
+    for (int f = 0; f < matriz.length; f++) {
+      for (int c = 0; c < matriz[f].length; c++) {
+        System.out.println("Fila[" + f + "]");
+        System.out.println("Columna[" + c + "]");
         System.out.print("-> ");
-        if(!input.hasNextInt()){
+        if (!input.hasNextInt()) {
           System.out.println("\nError: Debe ingresar un numero entero");
           System.out.println("Por favor, vuelva a intentarlo.\n");
           input.next(); // Limpiar el buffer
           c--; // Decrementar c para volver a pedir el valor de la columna actual
-        }
-        else{
+        } else {
           matriz[f][c] = input.nextInt();
           System.out.println("Valor ingresado: " + matriz[f][c]);
         }
       }
-
     }
+
+    System.out.println("\n-----------------------------------");
+    for (int f = 0; f < matriz.length; f++) {
+      for (int c = 0; c < matriz[f].length; c++) {
+        System.out.print(matriz[f][c] + " ");
+      }
+      System.out.println("");
+    }
+    System.out.println("-----------------------------------");
+    System.out.println("Fin del programa, gracias por usarlo.");
   }
 }
