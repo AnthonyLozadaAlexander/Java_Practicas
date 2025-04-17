@@ -20,7 +20,6 @@ public class MatrizSimetrica {
         nFilas = input.nextInt();
         if (nFilas <= 0) {
           System.out.println("\nError: Debe Ingresar un numero entero mayor a 0\n");
-          continue;
         } else {
           System.out.println("Filas Ingresadas = [" + nFilas + "]");
           System.out.println("----------------------------");
@@ -34,7 +33,6 @@ public class MatrizSimetrica {
             nColumnas = input.nextInt();
             if (nColumnas <= 0) {
               System.out.println("Error: Debe Ingresar un numero entero mayor a 0\n");
-              continue;
             } else {
               System.out.println("Columnas Ingresadas = [" + nColumnas + "]");
               System.out.println("-----------------------------------------------");
