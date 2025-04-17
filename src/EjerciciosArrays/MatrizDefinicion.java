@@ -23,7 +23,6 @@ public class MatrizDefinicion {
       else{
         
         nFilas = input.nextInt();
-
         System.out.println("Ingrese el numero de columnas de la matriz");
         System.out.print("-> ");
         if (!input.hasNextInt()) {
