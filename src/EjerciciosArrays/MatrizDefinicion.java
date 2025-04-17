@@ -46,13 +46,14 @@ public class MatrizDefinicion {
 
     System.out.println("\n---------------------------------");
     System.out.println("Ingrese los valores de la matriz:  ");
-    System.out.println("-----------------------------------");
     for (int f = 0; f < matriz.length; f++) {
       for (int c = 0; c < matriz[f].length; c++) {
+        System.out.println("-----------------------------------");
         System.out.println("Fila[" + f + "]");
         System.out.println("Columna[" + c + "]");
         System.out.print("-> ");
-        if (!input.hasNextInt()) {
+        if (!input.hasNextInt())
+        {
           System.out.println("\nError: Debe ingresar un numero entero");
           System.out.println("Por favor, vuelva a intentarlo.\n");
           input.next(); // Limpiar el buffer
@@ -60,6 +61,7 @@ public class MatrizDefinicion {
         } else {
           matriz[f][c] = input.nextInt();
           System.out.println("Valor ingresado: " + matriz[f][c]);
+          System.out.println("-----------------------------------");
         }
       }
     }
@@ -71,7 +73,7 @@ public class MatrizDefinicion {
       }
       System.out.println("");
     }
-    System.out.println("-----------------------------------");
+    System.out.println("-------------------------------------");
     System.out.println("Fin del programa, gracias por usarlo.");
   }
 }
