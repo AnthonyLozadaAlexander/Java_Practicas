@@ -54,7 +54,16 @@ public class MatrizDefinicion {
         System.out.println("Fila["+f+"]");
         System.out.println("Columna["+c+"]");
         System.out.print("-> ");
-        matriz[f][c] = input.nextInt();
+        if(!input.hasNextInt()){
+          System.out.println("\nError: Debe ingresar un numero entero");
+          System.out.println("Por favor, vuelva a intentarlo.\n");
+          input.next(); // Limpiar el buffer
+          c--; // Decrementar c para volver a pedir el valor de la columna actual
+        }
+        else{
+          matriz[f][c] = input.nextInt();
+          System.out.println("Valor ingresado: " + matriz[f][c]);
+        }
       }
 
     }
