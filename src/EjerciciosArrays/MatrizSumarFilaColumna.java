@@ -44,5 +44,16 @@ public class MatrizSumarFilaColumna {
 
         Matriz = new int[nFilas][nColumnas];
 
+        System.out.println("\nIngrese Los Elementos En La Matriz[" + nFilas + "][" + nColumnas + "]");
+        System.out.println("---------------------------------------------------------");
+        for (int F = 0; F < nFilas; F++) {
+            for (int C = 0; C < nColumnas; C++) {
+                System.out.println("Fila[" + F + "]");
+                System.out.println("Columna[" + C + "]");
+                System.out.print("-> ");
+                Matriz[F][C] = input.nextInt();
+            }
+        }
+
     }
 }
