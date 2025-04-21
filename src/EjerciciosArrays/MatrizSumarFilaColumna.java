@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MatrizSumarFilaColumna {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int Matriz[][], nFilas = 0, nColumnas = 0;
+        int Matriz[][], nFilas = 0, nColumnas = 0, sumaF, sumaC;
 
         System.out.println("----------------------------");
         System.out.println("         BIENVENIDO         ");
@@ -55,5 +55,28 @@ public class MatrizSumarFilaColumna {
             }
         }
 
+        System.out.println("\nLa Matriz es: ");
+        for(int i = 0; i < nFilas; i++){
+            for(int j = 0; j < nColumnas; j++){
+                System.out.print(Matriz[i][j] + "");
+            }
+            System.out.println("");
+        }
+        System.out.println("---------------------------------------------------------");
+        for(int i = 0; i < nFilas; i++){
+            sumaF = 0;
+            for(int j = 0; j < nColumnas; j++){
+                sumaF = sumaF + Matriz[i][j];
+            }
+            System.out.println("\nLa Suma De La Fila["+i+"] es: "+ sumaF);
+        }
+        System.out.println("---------------------------------------------------------");
+        for(int j = 0; j < nColumnas; j++){
+            sumaC = 0;
+            for(int i = 0; i < nFilas; i++){
+                sumaC = sumaC + Matriz[i][j];
+            }
+            System.out.println("\nLa Suma De Columna Es: " + sumaC);
+        }
     }
 }
