@@ -78,5 +78,6 @@ public class MatrizSumarFilaColumna {
             }
             System.out.println("\nLa Suma De Columna Es: " + sumaC);
         }
+        System.out.println("---------------------------------------------------------");
     }
 }
