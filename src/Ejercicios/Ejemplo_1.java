@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class Ejemplo_1 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         //Ejercicio
         System.out.println("hola amikos, como estan los quiero mucho\n");
         System.out.println("Verificar si un numero es par o impar");
         int num1;
-        Scanner input = new Scanner(System.in);
         System.out.println("Ingrese un numero: ");
         num1 = input.nextInt();
 
