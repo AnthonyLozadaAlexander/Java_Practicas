@@ -1,7 +1,7 @@
 package Ejercicios;
 import java.util.Scanner;
 
-public class Ejercicio_IntegradorCondicional_extra {
+public class Ejercicio_IntegradorCondicionalV2 {
     public static void main(String[] args){
 
         //Merceria mayorista --> vende al por mayor
