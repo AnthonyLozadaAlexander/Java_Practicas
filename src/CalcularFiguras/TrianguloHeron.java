@@ -7,7 +7,7 @@ public class TrianguloHeron {
         Scanner input = new Scanner(System.in);
         float a=0.0f, b=0.0f, c=0.0f;
         System.out.println("--------------------------");
-        System.out.println("Bienvenido Al Metodo Heron");
+        System.out.println("Calcular: Triangulo Heron");
         System.out.println("--------------------------");
         do {
             System.out.println("Ingrese el valor de a");
