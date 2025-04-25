@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class TrianguloHeron {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        float a=0, b=0, c=0;
+        float a=0.0f, b=0.0f, c=0.0f;
         System.out.println("--------------------------");
         System.out.println("Bienvenido Al Metodo Heron");
         System.out.println("--------------------------");
         do {
             System.out.println("Ingrese el valor de a");
             System.out.print("-> ");
-            if (!input.hasNext()) {
+            if (!input.hasNextFloat()) {
                 System.out.println("\nError: Dato Invalido\n");
                 input.next();
             }else {
@@ -26,7 +26,8 @@ public class TrianguloHeron {
                         System.out.println("-----------------------------------");
                         System.out.println("Ingrese el valor de B");
                         System.out.print("-> ");
-                        if (!input.hasNext()) {
+                        if (!input.hasNextFloat()) {
+                            System.out.println("-----------------------------------");
                             System.out.println("\nError: Dato Invalido\n");
                             input.next();
                         } else {
@@ -40,13 +41,15 @@ public class TrianguloHeron {
                                     System.out.println("-----------------------------------");
                                     System.out.println("Ingrese el valor de C");
                                     System.out.print("-> ");
-                                    if (!input.hasNext()) {
+                                    if (!input.hasNextFloat()) {
+                                        System.out.println("-----------------------------------");
                                         System.out.println("\nError: Dato Invalido\n");
                                         input.next();
                                     }
                                     else {
                                         c = input.nextFloat();
                                         if (c <= 0) {
+                                            System.out.println("-----------------------------------");
                                             System.out.println("\nError: El Valor Debe Ser Positivo\n");
                                         } else {
                                             System.out.println("\nValor Ingresado: " + c);
@@ -60,5 +63,11 @@ public class TrianguloHeron {
                 }
             }
         }while(a <= 0);
+        float S = MetodoHeron.semiArea(a, b, c);
+        float Area = MetodoHeron.areaTriangulo(a,b,c);
+
+        System.out.println("La SemiArea Del Triangulo es: " + S);
+        System.out.println("El Area Del Triangulo es de: " + Area);
+        System.out.println("-----------------------------------");
     }
 }
