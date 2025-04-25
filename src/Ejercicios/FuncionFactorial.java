@@ -20,7 +20,7 @@ public class FuncionFactorial {
   public static void CalcularFactorial(){
     int i, f = 1;
     for(i = 1; i <= n; i++){
-      f = f * 1;
+      f = f * i;
     }
 
     System.out.println("El factorial de " + n + " es: " + f);
