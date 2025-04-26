@@ -19,6 +19,7 @@ public class EjercicioMultiplicar_Array {
       System.out.println("Ingrese el número");
       arreglo[i] = input.nextInt();
     }
+
     System.out.println("------------------------------------------");
     System.out.println("Resultados: ");
     for(int i = 0; i < arreglo.length; i++){
