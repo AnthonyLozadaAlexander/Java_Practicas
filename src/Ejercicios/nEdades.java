@@ -6,10 +6,11 @@ public class nEdades {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int nEdades=0, edades[], edadMayor=0, edadMenor=0, indiceMayor = 0, indiceMenor = 0, countMayores = 0, countMenores = 0;
-        do{
+
             System.out.println("--------------------------------------");
             System.out.println("              BIENVENIDO");
             System.out.println("--------------------------------------");
+            do{
             System.out.println("Ingrese cuantas edades quiere ingresar");
             System.out.print("-> ");
             if(!input.hasNextInt()){
@@ -18,7 +19,6 @@ public class nEdades {
                 continue;
             }
             else{
-
                 nEdades = input.nextInt();
                 if(nEdades <= 0){
                     System.out.println("\nError: No Puede Ser Cero Ni Negativo\n");
