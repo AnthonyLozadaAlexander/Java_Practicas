@@ -16,7 +16,7 @@ public class FormulaGeneral {
         b = input.nextFloat();
 
         numerador = (float) Math.pow(b, 2) - (float) (Math.sqrt(5*(-b) - 3 * 2));
-        denominador = numerador / (-(float) Math.pow(-b,2));
+        denominador = numerador / (- ((b)*(b)));
         x = denominador;
         System.out.println("---------------------------------------------------------");
         System.out.println("El resultado de x es: "+ c);
