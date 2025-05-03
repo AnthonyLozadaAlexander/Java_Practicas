@@ -2,9 +2,15 @@ package Matematicas;
 import java.util.Scanner;
 
 public class FormulaGeneral {
+    public static float Formula(float a, float b){
+        float numerador = 0f, denominador = 0f; 
+        numerador = (float) Math.pow(b, 2) - (float) (Math.sqrt(5*(-b) - 3 * 2));
+        denominador = numerador / (- ((b)*(b)));
+        return denominador;  
+    }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        float x = 0f, a = 0f, b = 0f, c = 0f, denominador = 0f, numerador = 0f;
+        float a = 0f, b = 0f;
         System.out.println("----------------------------");
         System.out.println("         BIENVENIDO         ");
         System.out.println("----------------------------");
@@ -15,10 +21,11 @@ public class FormulaGeneral {
         System.out.print("-> ");
         b = input.nextFloat();
 
-        numerador = (float) Math.pow(b, 2) - (float) (Math.sqrt(5*(-b) - 3 * 2));
-        denominador = numerador / (- ((b)*(b)));
-        x = denominador;
-        System.out.println("---------------------------------------------------------");
-        System.out.println("El resultado de x es: "+ c);
+        //numerador = (float) Math.pow(b, 2) - (float) (Math.sqrt(5*(-b) - 3 * 2));
+        //denominador = numerador / (- ((b)*(b)));
+        //x = denominador;
+
+        System.out.println("-------------------------------");
+        System.out.println("El resultado de x es: "+ Formula(a,b));
     }
 }
