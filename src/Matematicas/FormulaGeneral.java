@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class FormulaGeneral {
     public static float Formula(float a, float b){
         float numerador = 0f, denominador = 0f; 
-        numerador = (float) Math.pow(b, 2) - (float) (Math.sqrt(5*(-b) - 3 * 2));
+        numerador = (float) (a)*(b*b) - (float) (Math.sqrt(5*(-b) - 3 * 2));
         denominador = numerador / (- ((b)*(b)));
         return denominador;  
     }
