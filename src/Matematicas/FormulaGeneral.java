@@ -11,6 +11,18 @@ public class FormulaGeneral {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         float a = 0f, b = 0f;
+        //float x = 0f, numerador = 0f, denominador = 0f;
+        //float resultado = 0f;
+        //float resultado = 0f;
+        //float numerador = 0f, denominador = 0f;
+        //float a = 0f, b = 0f;
+        //float x = 0f;
+        //float numerador = 0f, denominador = 0f;
+        //float resultado = 0f;
+        //float a = 0f, b = 0f;
+        //float x = 0f;
+        //float numerador = 0f, denominador = 0f;
+        
         System.out.println("----------------------------");
         System.out.println("         BIENVENIDO         ");
         System.out.println("----------------------------");
