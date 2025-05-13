@@ -1,4 +1,4 @@
-package Matematicas;
+package ExpresionesMatematicas;
 import java.util.Scanner;
 
 public class FormulaGeneral {
