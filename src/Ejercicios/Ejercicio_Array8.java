@@ -15,7 +15,6 @@ public class Ejercicio_Array8 {
         System.out.println("Elementos de la frase");
         String coma = ", ";
         for (int i = 0; i < array.length; i++) {
-
             if(i == array.length - 1){
                 System.out.print(array[i]); // No imprimir coma al final
             }else{
