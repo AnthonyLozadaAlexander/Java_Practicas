@@ -10,7 +10,7 @@ public class EjercicioLogica_1 {
 
     while (true) {
       cambios = false;
-      for (int i = 0; i < array.length; i++) {
+      for (int i = 1; i < array.length; i++) {
         if (array[i] < array[i - 1]) {
           aux = array[i];
           array[i] = array[i - 1];
@@ -37,19 +37,19 @@ public class EjercicioLogica_1 {
     System.out.println("--------------------------------------------------");
     System.out.println("Ingrese los elementos del array");
     for (int i = 0; i < arreglo.length; i++) {
-      System.out.print("Elemento[" + (i + 1) + "]: ");
+      System.out.print("Elemento[" + (i) + "]: ");
       arreglo[i] = input.nextInt();
     }
     System.out.println("--------------------------------------------------");
     System.out.println("Array Actual: ");
     for (int i = 0; i < arreglo.length; i++) {
-      System.out.println("Elemento[" + (i + 1) + "]: " + arreglo[i]);
+      System.out.println("Elemento[" + (i) + "]: " + arreglo[i]);
     }
     System.out.println("--------------------------------------------------");
     ordenarBubbleSort(arreglo); // función que ordena el array
     System.out.println("Array Ordenado: ");
     for (int i = 0; i < arreglo.length; i++) {
-      System.out.println("Elemento[" + (i + 1) + "]: " + arreglo[i]);
+      System.out.println("Elemento[" + (i) + "]: " + arreglo[i]);
     }
     System.out.println("--------------------------------------------------");
 
