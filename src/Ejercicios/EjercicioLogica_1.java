@@ -3,7 +3,7 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class EjercicioLogica_1 {
-  public static int ordenarBubbleSort(int[] array){
+  public void ordenarBubbleSort(int[] array){
     int aux;
     boolean cambios = false;
     int pasadas = 0;
@@ -18,12 +18,11 @@ public class EjercicioLogica_1 {
           cambios = true;
         }
       }
-      pasadas++;
       if (!cambios) {
         break;
       }
     }
-    return pasadas;
+
   }
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
